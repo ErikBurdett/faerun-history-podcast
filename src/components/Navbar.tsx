@@ -6,7 +6,6 @@ import {
   Headphones,
   Mail,
   Menu,
-  ShoppingBag,
   Skull,
   X,
 } from 'lucide-react';
@@ -72,16 +71,6 @@ function Navbar() {
 
           {/* Social Links - Desktop */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href={siteInfo.externalLinks.shop}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-outline h-10 py-2 px-4"
-              title="Shop"
-            >
-              Shop
-              <ShoppingBag className="w-4 h-4 ml-2" />
-            </a>
             <a 
               href={siteInfo.externalLinks.spotifyEpisode}
               target="_blank"
@@ -176,15 +165,6 @@ function Navbar() {
                 <div className="mt-8 pt-8 border-t border-ink-900">
                   <p className="text-sm text-ink-300 mb-4">Links</p>
                   <div className="flex gap-3">
-                    <a
-                      href={siteInfo.externalLinks.shop}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 rounded-lg bg-ink-900/40 text-ink-200 hover:text-mana-200 hover:bg-mana-500/10 transition-all duration-300 border border-ink-800"
-                      title="Shop"
-                    >
-                      <ShoppingBag className="w-5 h-5" />
-                    </a>
                     <a 
                       href={siteInfo.externalLinks.spotifyEpisode}
                       target="_blank"

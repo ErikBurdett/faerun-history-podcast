@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpenText, Globe, Headphones, Mail, ShoppingBag, Skull } from 'lucide-react';
+import { BookOpenText, Globe, Headphones, Mail, Skull } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
 
 const Footer = () => {
@@ -28,15 +28,6 @@ const Footer = () => {
               {siteInfo.description}
             </p>
             <div className="flex gap-3">
-              <a
-                href={siteInfo.externalLinks.shop}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-ink-900/40 text-ink-200 hover:text-mana-200 hover:bg-mana-500/10 border border-ink-800 hover:border-mana-500/30 transition-all duration-300"
-                title="Shop"
-              >
-                <ShoppingBag className="w-5 h-5" />
-              </a>
               <a 
                 href={siteInfo.externalLinks.spotifyEpisode}
                 target="_blank"
@@ -104,17 +95,6 @@ const Footer = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-ink-600 group-hover:bg-mana-400 transition-colors" />
                   Sponsors
                 </Link>
-              </li>
-              <li>
-                <a
-                  href={siteInfo.externalLinks.shop}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-ink-200 hover:text-mana-200 transition-colors flex items-center gap-2 group"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-ink-600 group-hover:bg-mana-400 transition-colors" />
-                  Shop
-                </a>
               </li>
             </ul>
           </div>

@@ -61,6 +61,6 @@ npm run dev
 
 ## Customize content
 
-- Edit show info (including the host, and the Printful shop URL), episodes, and blog posts in `src/data/podcastData.ts`.
+- Edit show info (including the host), episodes, and blog posts in `src/data/podcastData.ts`.
 
 

@@ -5,7 +5,6 @@ import {
   ArrowRight,
   BookOpenText,
   Headphones,
-  ShoppingBag,
   Sparkles,
 } from 'lucide-react';
 import { blogPosts, episodes, siteInfo } from '../data/podcastData';
@@ -102,15 +101,6 @@ const Home = () => {
                 Listen now
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <a
-                href={siteInfo.externalLinks.shop}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline"
-              >
-                Shop
-                <ShoppingBag className="w-4 h-4 ml-2" />
-              </a>
               <Link to="/blog" className="btn btn-outline">
                 Read the blog
                 <BookOpenText className="w-4 h-4 ml-2" />

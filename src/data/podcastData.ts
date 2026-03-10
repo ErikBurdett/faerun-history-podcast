@@ -47,7 +47,6 @@ export const siteInfo = {
       'https://open.spotify.com/episode/1ynlyPCiOPzbdXMv2SfaQE?si=5867a8651df34806',
     spotifyShowEmbed:
       'https://open.spotify.com/embed/show/3GWoDkvK7pofoGGiVNnjwp?utm_source=generator&theme=0',
-    shop: 'https://www.printful.com/',
     officialSite: 'https://taleofthelich.com',
   },
   host: {
