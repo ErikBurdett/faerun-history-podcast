@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Crimson Pro', ui-serif, Georgia, serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-ink-950 text-bone-50;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-mana-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-mana-600;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-mana-500/30 text-bone-50;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mana-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-candle-300 via-ember-400 to-mana-400 text-ink-950 hover:from-candle-200 hover:via-ember-300 hover:to-mana-300 h-12 py-3 px-6 font-semibold border border-ink-800/70;
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(251, 247, 238, 0.08) inset,
+      0 0 18px rgba(216, 90, 21, 0.12),
+      0 0 20px rgba(58, 166, 255, 0.12);
+  }
+  
+  .btn-outline {
+    @apply border-2 border-candle-500/45 text-bone-50 bg-transparent hover:bg-candle-500/10 hover:border-candle-400/60 h-12 py-3 px-6 font-semibold;
+  }
+  
+  .btn-ghost {
+    @apply text-ink-200 hover:text-candle-200 hover:bg-candle-500/10 h-10 py-2 px-4;
+  }
+  
+  .input {
+    @apply flex h-12 w-full rounded-lg border-2 border-ink-900 bg-ink-950/60 px-4 py-3 text-sm text-bone-50 placeholder:text-ink-400 focus:outline-none focus:border-mana-500 focus:ring-2 focus:ring-mana-500/20 transition-all duration-300;
+  }
+  
+  .textarea {
+    @apply flex w-full rounded-lg border-2 border-ink-900 bg-ink-950/60 px-4 py-3 text-sm text-bone-50 placeholder:text-ink-400 focus:outline-none focus:border-mana-500 focus:ring-2 focus:ring-mana-500/20 transition-all duration-300 resize-none;
+  }
+  
+  .card {
+    @apply rounded-xl border border-ink-900 bg-ink-950/30 backdrop-blur-sm shadow-xl;
+  }
+  
+  .card-glow {
+    @apply rounded-xl border border-candle-500/20 bg-ink-900/35 backdrop-blur-sm shadow-xl hover:border-candle-500/30 transition-all duration-500;
+    box-shadow:
+      0 18px 60px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(251, 247, 238, 0.04) inset,
+      0 0 42px rgba(58, 166, 255, 0.08),
+      0 0 38px rgba(216, 90, 21, 0.06);
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-display font-bold bg-gradient-to-r from-candle-200 via-ember-200 to-mana-200 bg-clip-text text-transparent;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-candle-200 to-mana-200 bg-clip-text text-transparent;
+  }
+
+  .tech-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-mana-500/10 text-mana-200 border border-mana-500/30;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism */
+  .glass {
+    @apply bg-ink-950/30 backdrop-blur-md border border-white/10;
+  }
+
+  /* Arcane background */
+  .bg-runes {
+    background-image:
+      radial-gradient(1200px circle at 18% 12%, rgba(58, 166, 255, 0.14), transparent 58%),
+      radial-gradient(1000px circle at 86% 82%, rgba(216, 90, 21, 0.10), transparent 62%),
+      radial-gradient(900px circle at 40% 92%, rgba(210, 164, 20, 0.10), transparent 60%),
+      linear-gradient(180deg, rgba(0,0,0,0.35), transparent 40%, rgba(0,0,0,0.55)),
+      repeating-linear-gradient(90deg, rgba(251,247,238,0.03) 0px, rgba(251,247,238,0.03) 1px, transparent 1px, transparent 22px),
+      url("data:image/svg+xml,%3Csvg width='240' height='240' viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(251,247,238,0.06)' stroke-width='1'%3E%3Cpath d='M18 34c26 10 46 10 70 0'/%3E%3Cpath d='M152 42c22 16 38 16 58 0'/%3E%3Cpath d='M30 184c34-12 62-12 98 0'/%3E%3Cpath d='M152 180c24-10 44-10 66 0'/%3E%3Cpath d='M54 72l12 12-12 12-12-12z'/%3E%3Cpath d='M188 120l10 10-10 10-10-10z'/%3E%3Cpath d='M98 132c10-18 34-18 44 0'/%3E%3Cpath d='M80 118c26-24 54-24 80 0'/%3E%3Cpath d='M120 92v28'/%3E%3Cpath d='M120 144v28'/%3E%3Cpath d='M34 116c14 0 22-8 22-22'/%3E%3Cpath d='M206 112c-14 0-22 8-22 22'/%3E%3C/g%3E%3Cg fill='rgba(210,164,20,0.05)'%3E%3Ccircle cx='56' cy='156' r='2'/%3E%3Ccircle cx='186' cy='78' r='2'/%3E%3Ccircle cx='112' cy='34' r='1.5'/%3E%3Ccircle cx='208' cy='206' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover, cover, cover, cover, 420px 420px, 240px 240px;
+    background-position: center, center, center, 0 0;
+  }
+
+  /* Scan line effect */
+  .scan-lines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0px,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Gradient borders */
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(135deg, #d2a414, #d85a15, #3aa6ff);
+    padding: 2px;
+    border-radius: 0.75rem;
+  }
+
+  .gradient-border > * {
+    background: #070508;
+    border-radius: 0.65rem;
+  }
+
+  /* Text glow effect */
+  .text-glow {
+    text-shadow:
+      0 0 14px rgba(58, 166, 255, 0.34),
+      0 0 22px rgba(216, 90, 21, 0.18),
+      0 0 18px rgba(210, 164, 20, 0.22);
+  }
+
+  /* Stagger animation delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+  .stagger-7 { animation-delay: 0.7s; }
+  .stagger-8 { animation-delay: 0.8s; }
+
+  /* Hover lift effect */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-mana-500/10;
+  }
+
+  /* Terminal cursor */
+  .terminal-cursor::after {
+    content: '▋';
+    animation: blink 1s step-end infinite;
+    @apply text-mana-300 ml-1;
+  }
+
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* Noise texture overlay */
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(1200px circle at 50% 35%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.28) 55%, rgba(0,0,0,0.62) 100%);
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  /* Falling stars */
+  .star-field {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  .star {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size, 2px);
+    height: var(--size, 2px);
+    border-radius: 9999px;
+    background: rgba(251, 247, 238, 0.92);
+    opacity: 0;
+    filter: drop-shadow(0 0 8px rgba(58, 166, 255, 0.25))
+      drop-shadow(0 0 10px rgba(210, 164, 20, 0.18));
+    animation: star-fall var(--dur, 14s) linear infinite;
+    animation-delay: var(--delay, 0s);
+  }
+
+  .star::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: var(--len, 140px);
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(251, 247, 238, 0) 0%,
+      rgba(251, 247, 238, 0.38) 45%,
+      rgba(58, 166, 255, 0.42) 100%
+    );
+    transform: translateY(-50%) rotate(var(--angle, 40deg));
+    transform-origin: right center;
+  }
+
+  @keyframes star-fall {
+    0% {
+      transform: translate3d(0, 0, 0);
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(var(--dx, 110vw), var(--dy, 70vh), 0);
+      opacity: 0;
+    }
+  }
+}
+
