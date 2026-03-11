@@ -44,9 +44,11 @@ export const siteInfo = {
   contactEmail: 'taleofthelich@gmail.com',
   externalLinks: {
     spotifyEpisode:
-      'https://open.spotify.com/episode/1ynlyPCiOPzbdXMv2SfaQE?si=5867a8651df34806',
+      'https://open.spotify.com/episode/1OYOZ6hJuTX520lSKbhJIy?si=NDShj0WsQ0626wyOymfFgg',
     spotifyShowEmbed:
       'https://open.spotify.com/embed/show/3GWoDkvK7pofoGGiVNnjwp?utm_source=generator&theme=0',
+    transistorPlaylistEmbed:
+      'https://share.transistor.fm/e/the-lichs-tale-a-faerun-lorecast/playlist',
     officialSite: 'https://taleofthelich.com',
   },
   host: {
@@ -74,7 +76,33 @@ export const sponsors: Sponsor[] = [
 
 export const episodes: Episode[] = [
   {
-    id: '1ynlyPCiOPzbdXMv2SfaQE',
+    id: '3',
+    title: 'E3: Days of Thunder: The Creator Races',
+    showName: 'The Lich’s Tale: A Faerûn Lorecast',
+    publishedDateLabel: 'Mar 10, 2026',
+    durationLabel: '2 hr 22 min',
+    description:
+      'Step into the hidden stacks beneath Waterdeep and listen as a friendly lich guides you through the long memory of Faerûn.',
+    spotifyUrl:
+      'https://open.spotify.com/episode/1OYOZ6hJuTX520lSKbhJIy?si=NDShj0WsQ0626wyOymfFgg',
+    spotifyEmbedUrl:
+      'https://open.spotify.com/embed/episode/1OYOZ6hJuTX520lSKbhJIy?utm_source=generator&theme=0',
+  },
+  {
+    id: '2',
+    title: 'E2: Age of Myth: First Stories, First Powers',
+    showName: 'The Lich’s Tale: A Faerûn Lorecast',
+    publishedDateLabel: 'Mar 10, 2026',
+    durationLabel: '2 hr 11 min',
+    description:
+      'Step into the hidden stacks beneath Waterdeep and listen as a friendly lich guides you through the long memory of Faerûn.',
+    spotifyUrl:
+      'https://open.spotify.com/episode/1ynlyPCiOPzbdXMv2SfaQE?si=ole4mM_YQAqSDukvLsJ5vg',
+    spotifyEmbedUrl:
+      'https://open.spotify.com/embed/episode/1ynlyPCiOPzbdXMv2SfaQE?utm_source=generator&theme=0',
+  },
+  {
+    id: '1',
     title: 'An Introduction to The World of Faerûn',
     showName: 'The Lich’s Tale: A Faerûn Lorecast',
     publishedDateLabel: 'Mar 9, 2026',
@@ -85,7 +113,7 @@ export const episodes: Episode[] = [
     coverImageAlt:
       'Episode 1 cover art for The Lich’s Tale: A Faerûn Lorecast',
     spotifyUrl:
-      'https://open.spotify.com/episode/1ynlyPCiOPzbdXMv2SfaQE?si=5867a8651df34806',
+      'https://open.spotify.com/episode/1ynlyPCiOPzbdXMv2SfaQE?si=ole4mM_YQAqSDukvLsJ5vg',
     spotifyEmbedUrl:
       'https://open.spotify.com/embed/episode/1ynlyPCiOPzbdXMv2SfaQE?utm_source=generator&theme=0',
   },

@@ -14,6 +14,7 @@ import { siteInfo } from '../data/podcastData';
 const NAV_LINKS = [
   { name: 'Home', path: '/' },
   { name: 'Episodes', path: '/episodes' },
+  { name: 'Listen', path: '/listen' },
   { name: 'Blog', path: '/blog' },
   { name: 'About', path: '/about' },
   { name: 'Sponsors', path: '/sponsors' },
