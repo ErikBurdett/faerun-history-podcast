@@ -1,16 +1,3 @@
-export type Episode = {
-  id: string;
-  title: string;
-  showName: string;
-  publishedDateLabel?: string;
-  durationLabel?: string;
-  description: string;
-  coverImageUrl?: string;
-  coverImageAlt?: string;
-  spotifyUrl: string;
-  spotifyEmbedUrl: string;
-};
-
 export type BlogPost = {
   slug: string;
   title: string;
@@ -43,12 +30,15 @@ export const siteInfo = {
   ],
   contactEmail: 'taleofthelich@gmail.com',
   externalLinks: {
-    spotifyEpisode:
-      'https://open.spotify.com/episode/1OYOZ6hJuTX520lSKbhJIy?si=NDShj0WsQ0626wyOymfFgg',
+    spotifyShow: 'https://open.spotify.com/show/3GWoDkvK7pofoGGiVNnjwp',
     spotifyShowEmbed:
       'https://open.spotify.com/embed/show/3GWoDkvK7pofoGGiVNnjwp?utm_source=generator&theme=0',
+    rssFeed: 'https://feeds.transistor.fm/the-lichs-tale-a-faerun-lorecast',
     transistorPlaylistEmbed:
       'https://share.transistor.fm/e/the-lichs-tale-a-faerun-lorecast/playlist',
+    youtubeChannel: 'https://www.youtube.com/@TheLichsTale',
+    youtubeUploadsEmbed:
+      'https://www.youtube.com/embed/videoseries?list=UUc57XqRCgrrS_YrN_1JelfQ',
     officialSite: 'https://taleofthelich.com',
   },
   host: {
@@ -71,51 +61,6 @@ export const sponsors: Sponsor[] = [
     description:
       'A web studio focused on modern, performant sites and apps — built thoughtfully, accessibly, and with long-term maintainability in mind.',
     websiteUrl: 'https://dharmawebsolutions.com',
-  },
-];
-
-export const episodes: Episode[] = [
-  {
-    id: '3',
-    title: 'E3: Days of Thunder: The Creator Races',
-    showName: 'The Lich’s Tale: A Faerûn Lorecast',
-    publishedDateLabel: 'Mar 10, 2026',
-    durationLabel: '2 hr 22 min',
-    description:
-      'Step into the hidden stacks beneath Waterdeep and listen as a friendly lich guides you through the long memory of Faerûn.',
-    spotifyUrl:
-      'https://open.spotify.com/episode/1OYOZ6hJuTX520lSKbhJIy?si=NDShj0WsQ0626wyOymfFgg',
-    spotifyEmbedUrl:
-      'https://open.spotify.com/embed/episode/1OYOZ6hJuTX520lSKbhJIy?utm_source=generator&theme=0',
-  },
-  {
-    id: '2',
-    title: 'E2: Age of Myth: First Stories, First Powers',
-    showName: 'The Lich’s Tale: A Faerûn Lorecast',
-    publishedDateLabel: 'Mar 10, 2026',
-    durationLabel: '2 hr 11 min',
-    description:
-      'Step into the hidden stacks beneath Waterdeep and listen as a friendly lich guides you through the long memory of Faerûn.',
-    spotifyUrl:
-      'https://open.spotify.com/episode/1ynlyPCiOPzbdXMv2SfaQE?si=ole4mM_YQAqSDukvLsJ5vg',
-    spotifyEmbedUrl:
-      'https://open.spotify.com/embed/episode/1ynlyPCiOPzbdXMv2SfaQE?utm_source=generator&theme=0',
-  },
-  {
-    id: '1',
-    title: 'An Introduction to The World of Faerûn',
-    showName: 'The Lich’s Tale: A Faerûn Lorecast',
-    publishedDateLabel: 'Mar 9, 2026',
-    durationLabel: '1 hr 32 min',
-    description:
-      'Step into the hidden stacks beneath Waterdeep and listen as a friendly lich guides you through the long memory of Faerûn.',
-    coverImageUrl: '/assets/lichtale-e-1-cover.png',
-    coverImageAlt:
-      'Episode 1 cover art for The Lich’s Tale: A Faerûn Lorecast',
-    spotifyUrl:
-      'https://open.spotify.com/episode/1ynlyPCiOPzbdXMv2SfaQE?si=ole4mM_YQAqSDukvLsJ5vg',
-    spotifyEmbedUrl:
-      'https://open.spotify.com/embed/episode/1ynlyPCiOPzbdXMv2SfaQE?utm_source=generator&theme=0',
   },
 ];
 

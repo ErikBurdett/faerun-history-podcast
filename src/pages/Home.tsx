@@ -4,12 +4,20 @@ import { Link } from 'react-router-dom';
 import {
   ArrowRight,
   BookOpenText,
+  Calendar,
+  Clock,
+  ExternalLink,
   Headphones,
   Sparkles,
+  Youtube,
 } from 'lucide-react';
-import { blogPosts, episodes, siteInfo } from '../data/podcastData';
+import { blogPosts, siteInfo } from '../data/podcastData';
+import { usePodcastFeedEpisodes } from '../lib/podcastFeed';
 
 const Home = () => {
+  const { episodes, loading: episodesLoading } = usePodcastFeedEpisodes(
+    siteInfo.externalLinks.rssFeed,
+  );
   const latestEpisode = episodes[0];
   const latestPosts = blogPosts.slice(0, 2);
   const STAR_COUNT = 32;
@@ -121,51 +129,79 @@ const Home = () => {
             >
               <div className="flex items-center gap-2 text-ink-300 mb-4">
                 <Headphones className="w-4 h-4 text-candle-300" />
-                <span className="text-sm tracking-wide">Latest episode</span>
+                <span className="text-sm tracking-wide">
+                  {episodesLoading ? 'Loading latest episode…' : 'Latest episode'}
+                </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-display font-semibold text-bone-50 mb-2">
                 {latestEpisode?.title ?? 'New episode soon'}
               </h2>
               {latestEpisode && (
                 <>
-                  {latestEpisode.coverImageUrl && (
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {latestEpisode.episodeLabel && (
+                      <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs bg-ink-950/40 border border-ink-800 text-ink-200">
+                        {latestEpisode.episodeLabel}
+                      </span>
+                    )}
+                    {latestEpisode.publishedDateLabel && (
+                      <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs bg-ink-950/40 border border-ink-800 text-ink-200">
+                        <Calendar className="w-3.5 h-3.5 text-mana-300" />
+                        {latestEpisode.publishedDateLabel}
+                      </span>
+                    )}
+                    {latestEpisode.durationLabel && (
+                      <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs bg-ink-950/40 border border-ink-800 text-ink-200">
+                        <Clock className="w-3.5 h-3.5 text-candle-300" />
+                        {latestEpisode.durationLabel}
+                      </span>
+                    )}
+                  </div>
+
+                  {latestEpisode.imageUrl && (
                     <div className="mb-5">
                       <img
-                        src={latestEpisode.coverImageUrl}
-                        alt={
-                          latestEpisode.coverImageAlt ??
-                          `${latestEpisode.title} cover art`
-                        }
+                        src={latestEpisode.imageUrl}
+                        alt={`${latestEpisode.title} cover art`}
                         loading="lazy"
                         className="w-full rounded-xl border border-ink-800 bg-ink-950/40 object-cover aspect-[16/10]"
                       />
                     </div>
                   )}
-                  <p className="text-ink-200 leading-relaxed mb-5">
-                    {latestEpisode.description}
-                  </p>
-                  <div className="rounded-xl border border-ink-800 bg-ink-950/40 overflow-hidden mb-5">
-                    <iframe
-                      title={`${siteInfo.title} — ${latestEpisode.title}`}
-                      src={latestEpisode.spotifyEmbedUrl}
-                      width="100%"
-                      height="152"
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                      loading="lazy"
-                      className="block w-full"
-                    />
-                  </div>
+
+                  {latestEpisode.audioUrl && (
+                    <div className="rounded-xl border border-ink-800 bg-ink-950/40 overflow-hidden mb-5 p-4">
+                      <audio
+                        controls
+                        preload="none"
+                        src={latestEpisode.audioUrl}
+                        className="w-full"
+                      />
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-3">
                     <Link to="/episodes" className="btn btn-primary">
                       All episodes
                     </Link>
+                    {latestEpisode.episodeUrl && (
+                      <a
+                        href={latestEpisode.episodeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline"
+                      >
+                        Episode page
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    )}
                     <a
-                      href={latestEpisode.spotifyUrl}
+                      href={siteInfo.externalLinks.spotifyShow}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-outline"
                     >
-                      Open in Spotify
+                      Spotify
+                      <ExternalLink className="w-4 h-4 ml-2" />
                     </a>
                   </div>
                 </>
@@ -199,6 +235,33 @@ const Home = () => {
                     loading="lazy"
                     className="block w-full"
                   />
+                </div>
+              </div>
+
+              <div className="card-glow p-6">
+                <div className="flex items-center gap-2 text-ink-300 mb-4">
+                  <Youtube className="w-4 h-4 text-ember-200" />
+                  <span className="text-sm tracking-wide">Watch</span>
+                </div>
+                <h3 className="text-xl font-display font-semibold text-bone-50 mb-3">
+                  YouTube channel
+                </h3>
+                <p className="text-ink-200 leading-relaxed mb-4">
+                  Lore videos, shorts, and behind-the-stacks updates.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Link to="/watch" className="btn btn-primary">
+                    Watch
+                  </Link>
+                  <a
+                    href={siteInfo.externalLinks.youtubeChannel}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline"
+                  >
+                    Open channel
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
                 </div>
               </div>
 

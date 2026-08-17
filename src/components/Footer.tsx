@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpenText, Globe, Headphones, Mail, Skull } from 'lucide-react';
+import { BookOpenText, Globe, Headphones, Mail, Skull, Youtube } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
 
 const Footer = () => {
@@ -29,13 +29,22 @@ const Footer = () => {
             </p>
             <div className="flex gap-3">
               <a 
-                href={siteInfo.externalLinks.spotifyEpisode}
+                href={siteInfo.externalLinks.spotifyShow}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-ink-900/40 text-ink-200 hover:text-candle-200 hover:bg-candle-500/10 border border-ink-800 hover:border-candle-500/30 transition-all duration-300"
                 title="Listen on Spotify"
               >
                 <Headphones className="w-5 h-5" />
+              </a>
+              <a
+                href={siteInfo.externalLinks.youtubeChannel}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-lg bg-ink-900/40 text-ink-200 hover:text-ember-200 hover:bg-ember-500/10 border border-ink-800 hover:border-ember-500/30 transition-all duration-300"
+                title="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
               <Link
                 to="/blog"
@@ -76,6 +85,12 @@ const Footer = () => {
                 <Link to="/listen" className="text-ink-200 hover:text-candle-200 transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 rounded-full bg-ink-600 group-hover:bg-candle-400 transition-colors" />
                   Listen
+                </Link>
+              </li>
+              <li>
+                <Link to="/watch" className="text-ink-200 hover:text-ember-200 transition-colors flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 rounded-full bg-ink-600 group-hover:bg-ember-400 transition-colors" />
+                  Watch
                 </Link>
               </li>
               <li>
@@ -133,13 +148,24 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href={siteInfo.externalLinks.spotifyEpisode}
+                  href={siteInfo.externalLinks.spotifyShow}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-ink-200 hover:text-candle-200 transition-colors flex items-center gap-3 group"
                 >
                   <Headphones className="w-4 h-4 text-ink-400 group-hover:text-candle-300 transition-colors" />
                   <span className="text-sm">Listen on Spotify</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteInfo.externalLinks.youtubeChannel}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ink-200 hover:text-ember-200 transition-colors flex items-center gap-3 group"
+                >
+                  <Youtube className="w-4 h-4 text-ink-400 group-hover:text-ember-200 transition-colors" />
+                  <span className="text-sm">Watch on YouTube</span>
                 </a>
               </li>
               <li>

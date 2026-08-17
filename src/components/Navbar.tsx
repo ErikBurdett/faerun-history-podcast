@@ -7,6 +7,7 @@ import {
   Mail,
   Menu,
   Skull,
+  Youtube,
   X,
 } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
@@ -15,6 +16,8 @@ const NAV_LINKS = [
   { name: 'Home', path: '/' },
   { name: 'Episodes', path: '/episodes' },
   { name: 'Listen', path: '/listen' },
+  { name: 'Watch', path: '/watch' },
+  { name: 'Library', path: '/library' },
   { name: 'Blog', path: '/blog' },
   { name: 'About', path: '/about' },
   { name: 'Sponsors', path: '/sponsors' },
@@ -25,7 +28,10 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    if (path === '/') return location.pathname === '/';
+    return location.pathname === path || location.pathname.startsWith(`${path}/`);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-ink-950/65 backdrop-blur-lg border-b border-ink-900/60">
@@ -73,13 +79,22 @@ function Navbar() {
           {/* Social Links - Desktop */}
           <div className="hidden md:flex items-center gap-3">
             <a 
-              href={siteInfo.externalLinks.spotifyEpisode}
+              href={siteInfo.externalLinks.spotifyShow}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-ink-200 hover:text-candle-200 hover:bg-candle-500/10 transition-all duration-300"
               title="Listen on Spotify"
             >
               <Headphones className="w-5 h-5" />
+            </a>
+            <a
+              href={siteInfo.externalLinks.youtubeChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg text-ink-200 hover:text-ember-200 hover:bg-ember-500/10 transition-all duration-300"
+              title="YouTube"
+            >
+              <Youtube className="w-5 h-5" />
             </a>
             <Link
               to="/blog"
@@ -167,12 +182,20 @@ function Navbar() {
                   <p className="text-sm text-ink-300 mb-4">Links</p>
                   <div className="flex gap-3">
                     <a 
-                      href={siteInfo.externalLinks.spotifyEpisode}
+                      href={siteInfo.externalLinks.spotifyShow}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 rounded-lg bg-ink-900/40 text-ink-200 hover:text-candle-200 hover:bg-candle-500/10 transition-all duration-300 border border-ink-800"
                     >
                       <Headphones className="w-5 h-5" />
+                    </a>
+                    <a
+                      href={siteInfo.externalLinks.youtubeChannel}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-lg bg-ink-900/40 text-ink-200 hover:text-ember-200 hover:bg-ember-500/10 transition-all duration-300 border border-ink-800"
+                    >
+                      <Youtube className="w-5 h-5" />
                     </a>
                     <Link
                       to="/blog"

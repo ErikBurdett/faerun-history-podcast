@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Globe, Headphones, Mail, ScrollText } from 'lucide-react';
+import { Globe, Headphones, Mail, ScrollText, Youtube } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
 
 const Contact = () => {
@@ -28,7 +28,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
               icon: Globe,
@@ -49,10 +49,18 @@ const Contact = () => {
             {
               icon: Headphones,
               title: 'Listen',
-              body: 'Open the latest episode on Spotify',
-              href: siteInfo.externalLinks.spotifyEpisode,
+              body: 'Open the show on Spotify',
+              href: siteInfo.externalLinks.spotifyShow,
               accent: 'text-candle-200',
               ring: 'border-candle-500/30 bg-candle-500/10',
+            },
+            {
+              icon: Youtube,
+              title: 'YouTube',
+              body: 'Watch new uploads',
+              href: siteInfo.externalLinks.youtubeChannel,
+              accent: 'text-ember-200',
+              ring: 'border-ember-500/30 bg-ember-500/10',
             },
             {
               icon: ScrollText,

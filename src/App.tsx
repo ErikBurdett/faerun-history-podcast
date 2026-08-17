@@ -4,11 +4,13 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Episodes from './pages/Episodes';
 import Playlist from './pages/Playlist';
+import Watch from './pages/Watch';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Sponsors from './pages/Sponsors';
+import Library from './pages/Library';
 
 function App() {
   return (
@@ -30,6 +32,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/listen" element={<Playlist />} />
+            <Route path="/watch" element={<Watch />} />
+            <Route path="/library" element={<Library />} />
+            <Route path="/library/:category" element={<Library />} />
+            <Route path="/library/:category/:index" element={<Library />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
