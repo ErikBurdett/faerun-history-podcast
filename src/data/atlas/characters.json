@@ -1,0 +1,71 @@
+{
+  "characters/maude-of-grey-weir": {
+    "body": "At Grey Weir, Maude taught a weigh-clerk’s son how to cut a seal and what it meant to put a date on one. A merchant a hundred miles downriver might stake a cargo on the order in which two promises had been made. A clerk who moved a date could change which household got paid.\n\nIn RR 2229 a League factor’s court hanged Maude after she refused to backdate a seal. The Order filed its protest. Four hundred stones attested it. The court paid no penalty. Ilthen could still count the stations that had received the protest long after he had lost the woman who taught him his trade.\n\nIn Erilian’s grimoire she has a painted leaf of her own. Her apprentice gives her a different sort of portrait. He names her before he tells the reader what he himself paid to keep those books.",
+    "related": [
+      "grimoire/witness-roads-13",
+      "chronicle/v-the-recorder-s-bargain",
+      "chronicle/iv-the-age-of-crowns",
+      "characters/ilthen-vael"
+    ],
+    "choices": []
+  },
+  "characters/ilthen-vael": {
+    "body": "The third child of a weigh-clerk, Ilthen grew up under Grey Weir with a wheeze left by the illness that took his brothers. At fourteen he could earn his supper by cutting a straight seal. By twenty-seven he was Third Recorder. At home was Senna, a boatwright’s daughter. At the station was Maude, who trusted him with the ledgers on the day she died.\n\n## The entry in his own hand\n\nWhen the Ninth Terrace asked what he wished to keep, Ilthen answered “the ledger.” The Synod granted his petition in the spring of RR 2231. He came out of the Second Interment with his testament between his teeth. The Order struck him from its rolls. Senna lived to seventy-one. He entered her burial in his book. His own line for that day records that he did not attend.\n\nTwo leaves in Erilian’s collection show what one name can hold. At Grey Weir the young recorder still has a mortal hand. In the Long Ash, Ledgerbone has had time to bury copies of his work elsewhere.",
+    "related": [
+      "grimoire/ashfall-16",
+      "grimoire/witness-roads-16",
+      "chronicle/v-the-recorder-s-bargain",
+      "characters/maude-of-grey-weir"
+    ],
+    "choices": []
+  },
+  "characters/erilian-kantonine": {
+    "body": "Erilian keeps the grimoire at the collection lectern, a short walk from the dueling table. A visitor can spend the evening with a painting while the kitchen turns out barley stew. Bera Kilnhand comes looking for a card worth keeping for years. Mara Quill comes hoping he has put a new chapter on the shelf.\n\n## What finds its way into a grimoire\n\nA fleet’s charter, a beekeeper’s working day and a lamp beside a silent stone all find room in the collection. Erilian leaves notes in the margins. The figure on a card may come from Ilthen’s testimony, a household’s story or a painter imagining what an ordinary shift at a waystation looked like.\n\nErilian also narrates the podcast set in Theandril. The recorder whose words he turns over at the lectern is Ilthen Vael. Travelers can spend time with both keepers here, one at the table and the other in his book.",
+    "related": [
+      "tavern/mara-quill",
+      "tavern/bera-kilnhand",
+      "grimoire/witness-roads",
+      "chronicle/the-book-of-broken-roads",
+      "tavern/the-bill-of-fare"
+    ],
+    "choices": []
+  },
+  "characters/aldery-debt-crowned": {
+    "body": "The fourth Aldery inherited a fleet held together by contracts. A merchant could insure a keel, pledge a cargo or sell the debt to someone who had never seen the sea. By the late age another captain would accept a League charter as readily as coin.\n\nAldery asked the stones to hold the labor of people still unborn. They held it. When Ilthen sets the pledge down among the abuses of the crowned age, the chilling detail is how well the machinery worked. One signature at the Anchorage reached into households that could have had no say in the war.\n\nOpen *The Paper Sea* beside that account. One painting gives the High Charter a face. Another, *Three Generations Pledged*, gives the debt a name that a family might use.",
+    "related": [
+      "grimoire/saltwind-16",
+      "grimoire/saltwind-15",
+      "chronicle/iv-the-age-of-crowns",
+      "peoples/saltwind-remnant"
+    ],
+    "choices": []
+  },
+  "characters/talen-fordkeeper": {
+    "body": "A ford looks different from a boat and from a cart. Reed cutters, boat families and growers all have a stake in where the water stands. Drain a bank to plant it and somebody farther down may have to drag a hull through mud. Talen’s survey gave people on either shore a place to begin the argument with wet feet and a mark they could inspect.\n\nAt Loamferry the same difficulty is a daily occupation. A pilot takes coin, grain or work at either landing. Try the crossing after the channel has shifted and the pilot’s knowledge is worth more than the cable. Read the terms the ferrymen keep, then look for the boatwright among the painted leaves of the Rekindled Hearths.",
+    "related": [
+      "peoples/reedbound-council",
+      "places/loamferry",
+      "grimoire/rekindled-2",
+      "tavern/hobb-lanternwake"
+    ],
+    "choices": []
+  },
+  "characters/dace-ninearch": {
+    "body": "Among the work halls of the Middle Reach, a builder has to be willing to show the work. An arch can look sound from the road long after the pier has begun to shift. The people who cross it have reason to ask what the inspector saw, and who has the authority to close the crossing.\n\n## The spring inspection\n\nAt the independent bridge town of Ninearch the engineers read every fault aloud each spring. Only then do they open the accounts. The town hires out its skill and keeps a rule about building for both sides of a war. Its own record mentions the one time it broke that rule. Dace’s two deeds make good company for that inspection roll. The same hands can know precisely where to shore up a wall and where to take it apart.",
+    "related": [
+      "peoples/wardhall-remnant",
+      "places/ninearch",
+      "fieldbook/craft-and-custom"
+    ],
+    "choices": []
+  },
+  "characters/ilse-lanternkeep": {
+    "body": "For a traveler with a sick companion, a mark beside the road has a very particular meaning. It tells them how far they must carry someone before they can ask for clean linen, water and a bed. Ilse walked the distance herself. Her people remember her by repeating the work of keeping a light.\n\nBehind the shutters, a house of refuge faces harder decisions. The care houses learned to keep clean stores through outbreaks of ash-lung. An exhausted attendant and a governor can both ask to close a door and mean quite different things by it. The Lantern Hospices’ charter gives the sick a claim on the household even on a night when admitting one more person costs it dearly.",
+    "related": [
+      "peoples/lantern-hospices",
+      "grimoire/terms-of-shelter-19",
+      "tavern/sella-bellrest"
+    ],
+    "choices": []
+  }
+}

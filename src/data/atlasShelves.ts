@@ -8,6 +8,12 @@ export const shelves = [
     line: "At Grey Weir, a recorder takes an oath to write down what he can attest. Open Ilthen Vael’s book at the beginning.",
   },
   {
+    id: "characters",
+    title: "Names in the margins",
+    art: "/assets/folio/keep-library.webp",
+    line: "Meet the recorder who kept the books, the teacher who trusted him with them, and the people whose marks a traveler can still find.",
+  },
+  {
     id: "places",
     title: "Along the roads",
     art: "/assets/folio/wardhall.webp",
@@ -37,12 +43,7 @@ export const shelves = [
     art: "/assets/folio/cartography.webp",
     line: "Recognize ashglass on the strand, learn a Waykeeper’s calling, and find out what goes into a hearth’s winter stores.",
   },
-  {
-    id: "council",
-    title: "At the council fire",
-    art: "/assets/atlas/cards/first-oaths.16.webp",
-    line: "A harvest too large for the granary. A stranger at the gate. Hear the petition and weigh the answers a hearth might give.",
-  },
+
 ];
 
 export type AtlasEntry = {
@@ -65,5 +66,4 @@ export type AtlasText = {
   figures?: AtlasFigure[];
   body: string;
   related: string[];
-  choices: { label: string; description: string }[];
 };

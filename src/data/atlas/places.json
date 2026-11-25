@@ -23,6 +23,7 @@
   "places/loamferry": {
     "body": "Loamferry holds the only dependable crossing for forty miles and charges either bank the same, in coin, grain or work, which is the whole of its constitution and most of its diplomacy. It refuses to be anyone's bridgehead; twice it has cut its own cables rather than carry a column that would not state its destination. Whoever takes the landings inherits a channel that silts, moves and lies, and the pilots who could read it have gone downstream to a village with the sense to stay quiet.",
     "related": [
+      "characters/talen-fordkeeper",
       "peoples/reedbound-council"
     ],
     "choices": []
@@ -44,6 +45,7 @@
   "places/ninearch": {
     "body": "Ninearch grew on and around a nine-arched bridge its engineers inspect in public every spring, reading the faults aloud before they read the accounts. It will raise a road, a mole or a siege ramp for whoever pays the survey, and refuses to raise the same work twice for two sides of one war — a rule it has broken once and does not discuss. It also refuses the old Throne's claim that reconstruction needs royal authority. A conqueror gains the crossing and the inspection roll, which will tell him, in a clerk's hand, precisely which piers he has spent the siege undermining.",
     "related": [
+      "characters/dace-ninearch",
       "peoples/wardhall-remnant"
     ],
     "choices": []

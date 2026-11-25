@@ -127,7 +127,9 @@
   },
   "grimoire/terms-of-shelter-19": {
     "body": "## Collector’s margin\n\nA collector’s painting of the present hearthlands. The scene and its people are imagined.",
-    "related": [],
+    "related": [
+      "characters/ilse-lanternkeep"
+    ],
     "choices": []
   },
   "grimoire/terms-of-shelter-20": {

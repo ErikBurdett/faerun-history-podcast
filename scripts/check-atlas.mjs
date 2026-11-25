@@ -36,6 +36,18 @@ for (const entry of entries) {
   for (const target of destinations)
     assert.ok(keys.has(target), entry.key + " links to missing " + target);
 }
+const byKey = new Map(entries.map(entry => [entry.key, entry]));
+for (const hand of read("../theandrilTable.json")) {
+  for (const card of hand.cards) {
+    const entry = byKey.get(card.key);
+    assert.ok(entry?.parent, "Unknown card on the Theandril page: " + card.key);
+    assert.deepEqual(
+      [card.name, card.art, card.line, card.volume],
+      [entry.title, entry.art, entry.summary, byKey.get(entry.parent).title],
+      "Theandril card table differs from the grimoire: " + card.key,
+    );
+  }
+}
 console.log(
   "Verified " +
     entries.length +

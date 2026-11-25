@@ -1,0 +1,185 @@
+[
+  {
+    "title": "The witness stones",
+    "cards": [
+      {
+        "key": "grimoire/witness-roads-13",
+        "name": "Maude, First Recorder",
+        "art": "/assets/atlas/cards/witness-roads.13.webp",
+        "volume": "Witness Roads",
+        "line": "Keepers, factors and couriers made distant trust an everyday occupation."
+      },
+      {
+        "key": "grimoire/first-oaths-14",
+        "name": "Oath at Cold Ford",
+        "art": "/assets/atlas/cards/first-oaths.14.webp",
+        "volume": "The First Oaths",
+        "line": "The first keepers held no kingdom. They held a place for the next witness."
+      },
+      {
+        "key": "grimoire/witness-roads-1",
+        "name": "Grey Weir Apprentice",
+        "art": "/assets/atlas/cards/witness-roads.1.webp",
+        "volume": "Witness Roads",
+        "line": "A straight column, a clean seal, and the patience to begin again."
+      },
+      {
+        "key": "grimoire/witness-roads-14",
+        "name": "The Honest Seal",
+        "art": "/assets/atlas/cards/witness-roads.14.webp",
+        "volume": "Witness Roads",
+        "line": "Keepers, factors and couriers made distant trust an everyday occupation."
+      },
+      {
+        "key": "grimoire/witness-roads-25",
+        "name": "Grey Weir Dawnfield",
+        "art": "/assets/atlas/cards/witness-roads.25.webp",
+        "volume": "Witness Roads",
+        "line": "The crossing matters because someone on the farther shore will honor the seal."
+      },
+      {
+        "key": "grimoire/witness-roads-40",
+        "name": "Grey Weir: Hold the Lantern",
+        "art": "/assets/atlas/cards/witness-roads.40.webp",
+        "volume": "Witness Roads",
+        "line": "A seal may be answered across mountains; an unanswered seal can stop a caravan."
+      },
+      {
+        "key": "grimoire/ashfall-16",
+        "name": "Ledgerbone, the Unerasable",
+        "art": "/assets/atlas/cards/ashfall.16.webp",
+        "volume": "The Long Ash",
+        "line": "His hands could be broken. There were copies of the ledger buried elsewhere."
+      },
+      {
+        "key": "grimoire/the-quiet-1",
+        "name": "Stone-side Night Keeper",
+        "art": "/assets/atlas/cards/the-quiet.1.webp",
+        "volume": "The Quiet",
+        "line": "A station keeper sits wrapped in a blanket beside the waystone, lamp lit, listening for an answer that has not come in nine nights."
+      }
+    ]
+  },
+  {
+    "title": "The old crowns",
+    "cards": [
+      {
+        "key": "grimoire/iron-covenant-16",
+        "name": "Covenant Forgekeeper",
+        "art": "/assets/atlas/cards/iron-covenant.16.webp",
+        "volume": "Forges of the Covenant",
+        "line": "The work would outlast its maker. The maker hoped it would deserve to."
+      },
+      {
+        "key": "grimoire/deepfen-16",
+        "name": "Widow of the Deepfen",
+        "art": "/assets/atlas/cards/deepfen.16.webp",
+        "volume": "Courts of the Deepfen",
+        "line": "The courts measured the world in seasons. Their neighbors preferred deadlines."
+      },
+      {
+        "key": "grimoire/saltwind-16",
+        "name": "Aldery, Debt-Crowned",
+        "art": "/assets/atlas/cards/saltwind.16.webp",
+        "volume": "The Paper Sea",
+        "line": "The harbor glittered with keels. The debt reached farther than the horizon."
+      },
+      {
+        "key": "grimoire/reckoning-16",
+        "name": "Provost of the Ninth Terrace",
+        "art": "/assets/atlas/cards/reckoning.16.webp",
+        "volume": "Written Fire",
+        "line": "Nine terraces of offices, and at the highest, a face the record does not show."
+      },
+      {
+        "key": "grimoire/saltwind-4",
+        "name": "Storm Navigator",
+        "art": "/assets/atlas/cards/saltwind.4.webp",
+        "volume": "The Paper Sea",
+        "line": "A fleet needs pilots, witnesses and someone willing to read the smallest clause."
+      },
+      {
+        "key": "grimoire/deepfen-15",
+        "name": "Refuge beneath the Reeds",
+        "art": "/assets/atlas/cards/deepfen.15.webp",
+        "volume": "Courts of the Deepfen",
+        "line": "Ceremony carries memory when a written charter has long since rotted."
+      },
+      {
+        "key": "grimoire/reckoning-1",
+        "name": "Erased Soldier",
+        "art": "/assets/atlas/cards/reckoning.1.webp",
+        "volume": "Written Fire",
+        "line": "The quiet at the ford traveled farther than any cry of battle."
+      },
+      {
+        "key": "grimoire/ashfall-1",
+        "name": "Ash-lung Healer",
+        "art": "/assets/atlas/cards/ashfall.1.webp",
+        "volume": "The Long Ash",
+        "line": "Someone still knew the letters. Someone still taught the children."
+      }
+    ]
+  },
+  {
+    "title": "Life at the hearth",
+    "cards": [
+      {
+        "key": "grimoire/rekindled-2",
+        "name": "Reedbound Boatwright",
+        "art": "/assets/atlas/cards/rekindled.2.webp",
+        "volume": "Rekindled Hearths",
+        "line": "Journeymen, boatwrights, shieldmates and pilots make the new age by doing its ordinary work."
+      },
+      {
+        "key": "grimoire/shared-measure-65",
+        "name": "Low-tide Crossing Guide",
+        "art": "/assets/atlas/cards/shared-measure.65.webp",
+        "volume": "The Shared Measure",
+        "line": "A brinefolk guide walks upright across exposed shore stones and plants a hand-held marker where human children can reach it."
+      },
+      {
+        "key": "grimoire/terms-of-shelter-65",
+        "name": "Guest-wing Chamberlain",
+        "art": "/assets/atlas/cards/terms-of-shelter.65.webp",
+        "volume": "Terms of Shelter",
+        "line": "A living human chamberlain opens a quiet guest chamber with fresh linen and two separate places for unlike visiting households."
+      },
+      {
+        "key": "grimoire/unclaimed-ways-13",
+        "name": "Foxfolk Path Speaker",
+        "art": "/assets/atlas/cards/unclaimed-ways.13.webp",
+        "volume": "The Unclaimed Ways",
+        "line": "The foxlike citizen carried a walking staff and three households' requests, not their authority."
+      },
+      {
+        "key": "grimoire/unfinished-answer-65",
+        "name": "Missing-record Mourner",
+        "art": "/assets/atlas/cards/unfinished-answer.65.webp",
+        "volume": "The Unfinished Answer",
+        "line": "A human custodian places an empty damaged document case on a low archive shelf, leaving its gap beside surviving records rather than filling it."
+      },
+      {
+        "key": "grimoire/the-quiet-16",
+        "name": "Open the Station Stores",
+        "art": "/assets/atlas/cards/the-quiet.16.webp",
+        "volume": "The Quiet",
+        "line": "The station keeper unlocks storerooms meant for travelers and hands out bread and blankets to the village instead."
+      },
+      {
+        "key": "grimoire/terms-of-shelter-19",
+        "name": "Hospice Morning Court",
+        "art": "/assets/atlas/cards/terms-of-shelter.19.webp",
+        "volume": "Terms of Shelter",
+        "line": "Hospice Morning Court: an imagined place of daily provision, maintained by present households rather than promised by a perfect history."
+      },
+      {
+        "key": "grimoire/rekindled-4",
+        "name": "Glass Tide Pilot",
+        "art": "/assets/atlas/cards/rekindled.4.webp",
+        "volume": "Rekindled Hearths",
+        "line": "Journeymen, boatwrights, shieldmates and pilots make the new age by doing its ordinary work."
+      }
+    ]
+  }
+]

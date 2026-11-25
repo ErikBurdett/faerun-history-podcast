@@ -86,6 +86,7 @@
   "grimoire/witness-roads-13": {
     "body": "",
     "related": [
+      "characters/maude-of-grey-weir",
       "chronicle/iii-the-raising-of-the-roads"
     ],
     "choices": []
@@ -107,6 +108,7 @@
   "grimoire/witness-roads-16": {
     "body": "",
     "related": [
+      "characters/ilthen-vael",
       "chronicle/iii-the-raising-of-the-roads"
     ],
     "choices": []

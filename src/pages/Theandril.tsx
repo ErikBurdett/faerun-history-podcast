@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { atlasRoot } from '../data/atlasShelves';
-import { useRef, useState } from 'react';
-import { ArrowDown, ArrowUpRight, ChevronLeft, ChevronRight, Expand, X } from 'lucide-react';
+import TheandrilCardTable from '../components/TheandrilCardTable';
+import { ArrowDown, ArrowUpRight, Expand } from 'lucide-react';
 import FolioHero from '../components/FolioHero';
 
 const games = [
@@ -17,37 +17,11 @@ const games = [
   },
 ];
 
-const cards = [
-  { art: 'grey-weir-apprentice', name: 'Grey Weir Apprentice', type: 'Creature', alt: 'An apprentice raises a glowing hand as a dark bird circles above.' },
-  { art: 'honest-seal', name: 'The Honest Seal', type: 'Creature', alt: 'A seal rests against a carved stone amid lanterns and broken masonry.' },
-  { art: 'dawnfield', name: 'Grey Weir Dawnfield', type: 'Basic Resource', alt: 'Stone rings span a paved road through the ruined city.' },
-  { art: 'hold-the-lantern', name: 'Grey Weir: Hold the Lantern', type: 'Instant', alt: 'Two travelers shelter behind a circle of light on a dark road.' },
+const portraits = [
+  { slug: 'maude-of-grey-weir', name: 'Maude of Grey Weir', role: 'First Recorder', art: '/assets/atlas/cards/witness-roads.13.webp', line: 'A court asked her to change the date on a seal. Her apprentice remembered what she did with the ledgers.' },
+  { slug: 'ilthen-vael', name: 'Ilthen Vael', role: 'The witness called Ledgerbone', art: '/assets/atlas/cards/ashfall.16.webp', line: 'He can still name the illness that took his brothers and the day he stopped needing to breathe.' },
+  { slug: 'aldery-debt-crowned', name: 'Aldery, the Debt-Crowned', role: 'High Charter of the Anchorage', art: '/assets/atlas/cards/saltwind.16.webp', line: 'The stones accepted a pledge that bound families for three generations.' },
 ];
-
-function CardGallery() {
-  const [index, setIndex] = useState(0);
-  const dialog = useRef<HTMLDialogElement>(null);
-  const active = cards[index];
-  function step(direction: number) {
-    setIndex(current => (current + direction + cards.length) % cards.length);
-  }
-  return <section className="folio-width front-shelf" id="paintings">
-    <div className="section-title"><div><p className="folio-label">Hearth &amp; Card · The Witness Roads</p><h2>At the card table</h2></div></div>
-    <p className="section-intro">A few leaves from the Grey Weir collection. Select a painting to see its full illustration.</p>
-    <div className="card-shelf">{cards.map((card, i) => <button key={card.art} type="button" className="painted-card" onClick={() => { setIndex(i); dialog.current?.showModal(); }}>
-      <span className="card-picture"><img loading="lazy" src={`/assets/folio/${card.art}.webp`} alt={card.alt}/><Expand size={16}/></span>
-      <span className="folio-label">{card.type}</span><span className="card-name">{card.name}</span>
-    </button>)}</div>
-    <dialog ref={dialog} className="art-viewer" aria-labelledby="painting-title" onKeyDown={e => {
-      if (e.key === 'ArrowLeft') step(-1);
-      if (e.key === 'ArrowRight') step(1);
-    }}>
-      <button autoFocus className="close-art" onClick={() => dialog.current?.close()} aria-label="Close painting"><X size={20}/></button>
-      <img src={`/assets/folio/${active.art}.webp`} alt={active.alt} loading="lazy" />
-      <div className="viewer-controls"><button onClick={() => step(-1)} aria-label="Previous painting"><ChevronLeft/></button><div aria-live="polite"><p className="folio-label">{active.type}</p><h3 id="painting-title">{active.name}</h3></div><button onClick={() => step(1)} aria-label="Next painting"><ChevronRight/></button></div>
-    </dialog>
-  </section>;
-}
 
 export default function Theandril() {
   return <div className="folio-page world-page">
@@ -56,13 +30,29 @@ export default function Theandril() {
       <div className="folio-actions"><Link className="gilt-button" to={atlasRoot}>Enter the atlas <ArrowUpRight size={16}/></Link><a className="quiet-link" href="#games">Explore the games <ArrowDown size={15}/></a></div>
     </FolioHero>
 
-    <section id="world" className="folio-width world-guide">
-      <div><p className="folio-label">The world guide</p><h2>After the <br/><em>Witness Roads</em></h2></div>
-      <div className="guide-copy"><p>In year 2311 of the Road Reckoning, the Witness Roads failed. Bargains once trusted across a continent had to be made again, face to face. Two years later came the Ashfall. Its cause is still disputed.</p>
-        <p>By 2447, a map of a pass or the name of a family willing to shelter a stranger can decide whether a journey succeeds. The Ashen Compact’s craft households make their oaths in public. Downriver, the Reedbound Council settles disputes between boat families and the people who drain the banks. On the coast, the charter towns of Glass Tide must agree who will pay to open a dangerous route.</p>
-        <p>Both games begin in this world. One gives you a table at the river’s edge. The other puts the next settlement in your hands.</p>
-        <div className="mini-links world-book"><Link to={atlasRoot+'/chronicle/the-book-of-broken-roads'}>Read Ilthen’s chronicle <ArrowUpRight size={14}/></Link><Link to={atlasRoot+'/places'}>Follow the roads <ArrowUpRight size={14}/></Link><Link to={atlasRoot+'/grimoire'}>Open Erilian’s grimoire <ArrowUpRight size={14}/></Link></div>
+    <nav className="folio-width world-contents" aria-label="Explore Theandril">
+      <a href="#world">The hearthlands</a><a href="#paintings">The card table</a><a href="#characters">Characters</a><a href="#podcast">Podcast</a><a href="#games">Games</a>
+    </nav>
+    <section id="world" className="folio-width world-spread">
+      <figure>
+        <img src="/assets/folio/erilians-keep.webp" alt="Gold-leaved trees frame a hillside settlement rising towards Erilian’s keep." loading="lazy" width="1440" height="810"/>
+        <figcaption>Erilian’s keep, seen from the valley</figcaption>
+      </figure>
+      <div className="guide-copy"><p className="folio-label">The hearthlands · Road Reckoning 2447</p><h2>After the Witness Roads</h2>
+        <p>At Cold Ford, nineteen hearths once agreed to take any stranger’s lawful bargain at their stone. The toll was grain and remembrance. Within ten generations, four hundred stations could vouch for a promise made on the far side of the world.</p>
+        <p>In 2311 the far stones fell silent. Two years later came the Ashfall. People still disagree about its cause. At Loamferry today, a pilot accepts coin, grain or a day’s work from either bank. The bargain holds as far as the pilot can carry you.</p>
+        <div className="mini-links world-book"><Link to={atlasRoot+'/fieldbook/reading-a-waystation'}>Visit a waystation <ArrowUpRight size={14}/></Link><Link to={atlasRoot+'/fieldbook/the-gilded-reach'}>Walk the Gilded Reach <ArrowUpRight size={14}/></Link><Link to={atlasRoot+'/chronicle/the-book-of-broken-roads'}>Read Ilthen’s chronicle <ArrowUpRight size={14}/></Link></div>
       </div>
+    </section>
+    <TheandrilCardTable/>
+    <section className="folio-width front-shelf world-portraits" id="characters" aria-labelledby="names-title">
+      <div className="section-title"><div><p className="folio-label">From the Book of Broken Roads</p><h2 id="names-title">Names in the margins</h2></div>
+        <Link className="quiet-link" to={atlasRoot+'/characters'}>Meet the characters <ArrowUpRight size={16}/></Link>
+      </div>
+      <div className="portrait-row">{portraits.map(person => <Link key={person.slug} to={atlasRoot+'/characters/'+person.slug}>
+        <img src={person.art} alt="" loading="lazy" width="256" height="384"/>
+        <div><p className="folio-label">{person.role}</p><h3>{person.name}</h3><p>{person.line}</p></div>
+      </Link>)}</div>
     </section>
 
     <section id="podcast" className="folio-width world-invitation mb-12" aria-labelledby="podcast-heading">
@@ -70,6 +60,7 @@ export default function Theandril() {
       <div>
         <h2 id="podcast-heading">Erilian’s new podcast</h2>
         <p>Listeners of <cite>The Lich’s Tale</cite> know Erilian as the keeper of Faerûn’s histories. In this new podcast, he turns to Theandril. It’s the same world where you can sit down for a game of cards on the Sallow or lead a caravan out to found a town. This time, you can come as a listener.</p>
+        <Link className="quiet-link" to={atlasRoot+'/characters/erilian-kantonine'}>Meet Erilian at the tavern <ArrowUpRight size={15}/></Link>
       </div>
     </section>
 
@@ -85,6 +76,6 @@ export default function Theandril() {
         </div>
       </article>)}</div>
     </section>
-    <CardGallery/>
+
   </div>;
 }

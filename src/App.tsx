@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react';
 import Theandril from './pages/Theandril';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -33,6 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/theandril" element={<Theandril />} />
+          <Route path="/theandril/atlas/council/*" element={<Navigate to="/theandril/atlas" replace />} />
           <Route path="/theandril/atlas/:shelf?/:leaf?" element={<Suspense fallback={<p className="folio-width pt-28" role="status">Opening the atlas…</p>}><TheandrilAtlas /></Suspense>} />
           <Route path="/episodes" element={<Episodes />} />
           <Route path="/listen" element={<Playlist />} />

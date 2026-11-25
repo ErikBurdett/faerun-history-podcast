@@ -233,7 +233,6 @@ function RelatedLinks({ keys }: { keys: string[] }) {
 function Reader({ entry }: { entry: AtlasEntry }) {
   const [text, setText] = useState<AtlasText>();
   const [failed, setFailed] = useState(false);
-  const [answer, setAnswer] = useState<number>();
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
     let current = true;
@@ -257,7 +256,9 @@ function Reader({ entry }: { entry: AtlasEntry }) {
   const position = peers.indexOf(entry);
   const next = peers[position + 1];
   const previous = peers[position - 1];
-  const isPainting = entry.art.includes("/cards/");
+  const illustration = entries.find((item) => item.parent && item.art === entry.art);
+  const isPainting = Boolean(illustration) && shelf.id !== "chronicle";
+  const caption = illustration && illustration.key !== entry.key ? illustration : undefined;
   return (
     <article className="atlas-leaf">
       <div className="atlas-leaf-title">
@@ -274,7 +275,7 @@ function Reader({ entry }: { entry: AtlasEntry }) {
         {entry.art && (
           <figure
             className={
-              "leaf-art " +
+              "leaf-art " + (shelf.id === "chronicle" ? "chronicle-art " : "") +
               (entry.art.includes("/seals/") || entry.art.includes("/guests/")
                 ? "seal-art"
                 : "")
@@ -282,8 +283,9 @@ function Reader({ entry }: { entry: AtlasEntry }) {
           >
             <img
               src={entry.art}
-              alt={isPainting ? entry.title + " · card illustration" : ""}
+              alt={caption ? "" : isPainting ? entry.title + " · card illustration" : ""}
             />
+            {caption && <figcaption>From the grimoire · <Link to={entryUrl(caption)}>{caption.title}</Link></figcaption>}
           </figure>
         )}
         <div className="atlas-prose">
@@ -328,27 +330,7 @@ function Reader({ entry }: { entry: AtlasEntry }) {
               >
                 {text.body}
               </Markdown>
-              {text.choices.length > 0 && (
-                <div className="council-answers">
-                  <h2>What would you counsel?</h2>
-                  {text.choices.map((choice, i) => (
-                    <button
-                      key={choice.label}
-                      aria-pressed={answer === i}
-                      onClick={() => setAnswer(i)}
-                    >
-                      {choice.label}
-                    </button>
-                  ))}
-                  <div aria-live="polite">
-                    {answer !== undefined && (
-                      <blockquote>
-                        {text.choices[answer].description}
-                      </blockquote>
-                    )}
-                  </div>
-                </div>
-              )}
+
             </>
           )}
         </div>

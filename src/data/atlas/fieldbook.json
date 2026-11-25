@@ -2,6 +2,7 @@
   "fieldbook/earth-and-water": {
     "body": "## A surveyor’s country\n\nGrasslands give way to the steppe and the dry chalk country. In the north, travelers pass from temperate forest into taiga and open tundra. A mountain crossing takes a different reckoning again. Rainforest, marsh, desert, ash scrub and the open ocean each have their own demands.\n\n## Water beneath the feet\n\nAt a fresh spring a household can lay out a garden. On waterlogged ground it may spend a season draining a field before it can sow. The same wet ground that frustrates a plough can feed a reed bed or yield peat for fuel. Along the shore, a pale stir beneath the surface can mark rich shoals.\n\n## Wood and pasture\n\nOld growth holds living records as well as timber. A managed woodlot must leave something for the next cutter. Heartwood goes to shields and workshop beams. On the steppe, wild horses supply the remount yards.\n\n## What comes out of the ground\n\nIronstone goes to heavy civic works and armor. Red copper supplies tools and fittings. Pale Witness silver pays for exacting instruments. An ore seam may be easy to see and expensive to work.\n\n## What can be kept\n\nHearthgrain gathered into a grange can feed a town long after harvest. White salt keeps provisions fit for a longer journey. Ashfall glass has quite another value: the vitrified fragments in a field make it harder to farm, but preserve traces of the catastrophe that made them. The fragments have yet to settle its cause.",
     "related": [
+      "fieldbook/the-gilded-reach",
       "places/wrackpool",
       "places/quickfallow",
       "places/the-glass-orchard"
@@ -57,8 +58,8 @@
   "fieldbook/hard-seasons": {
     "body": "## The Grey Winter\n\nA winter that does not break. The passes close early, the roads carry nothing, and every hearth eats from its stores.\n\nBuy grain on the roads and lay it in before the passes close; the hearths eat through the winter.\n\n## The Toll Wars\n\nThe wardens of the roads fall out over who may take a toll, and every cart pays twice until it is settled.\n\nBuy the wardens’ peace with one payment and the realm’s carts pass free.\n\n## The Glass Fever\n\nA fever follows the seam rumours up the roads and into the archives; the clerks who read the most fall first.\n\nPay the surgeons and close the archives to the sick; the clerks keep their work.\n\n## The Tremors\n\nThe ground under the glass moves at night. Walls crack, cisterns drain, and no hearth is sure of its footing.\n\nShore every wall and cistern before the ground moves again; the hearths stand.\n\n## The Fever of the End\n\nWith a bid for the world’s future open, every merchant hoards and every market empties; the coin goes to ground.\n\nGuarantee the markets from the treasury and the merchants trade on.\n\n## The Long Dark\n\nAsh on the wind blots the sun for a season; the fields yield and rot in the same week.\n\nBring the harvest under cover and salt what can be salted; the stores hold.\n\n## The Valley Blight\n\nA blight in the grain of one valley, carried from field to field on the carts; every hearth around it eats into its seed.\n\nBurn the blighted fields and buy clean seed from beyond the valley; the stores hold.\n\n## The Glass Storm\n\nA wind off the Ashfall glass that cuts like thrown knives; every roof and wall in its path is scored.\n\nShutter every hearth in the storm’s path and pay the roofers in advance; the walls stand.\n\n## The Bread Riots\n\nThe price of bread in one market breaks the peace of every hearth that buys there; the granaries are stormed by night.\n\nOpen the granaries at the old price from the treasury; the riots have nothing to feed on.",
     "related": [
-      "council/bumper-harvest",
-      "places/hoarhold"
+      "places/hoarhold",
+      "grimoire/the-quiet-16"
     ],
     "choices": []
   },
@@ -69,6 +70,25 @@
       "peoples/iron-covenant",
       "peoples/wardhall-remnant",
       "grimoire/the-quiet"
+    ],
+    "choices": []
+  },
+  "fieldbook/the-gilded-reach": {
+    "body": "The easiest ground to walk is the light strip just below the roots. Beyond it the meadow rises through stone and low flowers. Look along the crowns of the trees and the hills turn violet by degrees. A tower stands out against that last ridge more clearly than any turning in the trail.\n\nA map made from the ridge would give a traveler the tower. It takes a walker to mark the places where a loaded cart could turn, where a branch overhangs the path and where grass has grown across the old track. That distinction matters in the hearthlands. A name on a chart will get you as far as a river. At Loamferry it takes a pilot who knows this season’s channel to get you to the other bank.",
+    "related": [
+      "places/loamferry",
+      "characters/talen-fordkeeper",
+      "fieldbook/earth-and-water"
+    ],
+    "choices": []
+  },
+  "fieldbook/reading-a-waystation": {
+    "body": "Imagine arriving with a cartload of grain. The buyer is days away. At a Witness station, a clerk could take testimony, cut the seal and enter the agreement. At another station someone who had never met either party could attest the bargain. It was worth loading the cart because the receiving household could recognize the obligation.\n\n## When the wax still cooled\n\nOn the last day of RR 2311 forty thousand bargains stood attested. By midwinter none did. The station still had wax, lamps and people who knew how to copy a ledger. A keeper could stay beside the stone all night and have nothing to tell the next shift.\n\nIn *The Quiet* one painted keeper wraps up in a blanket beside the waystone. In another leaf the station opens its stores to its neighbors. The bread and blankets had been put away for travelers. They could still keep someone alive within walking distance.",
+    "related": [
+      "chronicle/iii-the-raising-of-the-roads",
+      "grimoire/the-quiet-1",
+      "grimoire/the-quiet-16",
+      "characters/maude-of-grey-weir"
     ],
     "choices": []
   }

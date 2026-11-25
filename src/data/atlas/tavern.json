@@ -1,6 +1,6 @@
 {
   "tavern/lethiel-fernwake": {
-    "body": "## Across the table\n\n> Roots come back after a hard winter. So do my companions. Let us see which of us is more patient.\n\n## When the guest wins\n\n> You cleared my table twice, and twice it grew back. Patience is a kind of strength.\n\n## When the keeper wins\n\n> Well pruned. I will let the fallen rest a while before I ask them to return.\n\n## At a draw\n\n> Both gardens bare at once. The ground will keep the seeds for next time.",
+    "body": "Lethiel’s eye goes to the roots in a Deepfen painting. A gardener sees next season in a patch of bare ground. Across the table that makes this herbalist a difficult guest to beat twice in the same way.\n\n## Across the table\n\n> Roots come back after a hard winter. So do my companions. Let us see which of us is more patient.\n\n## When the guest wins\n\n> You cleared my table twice, and twice it grew back. Patience is a kind of strength.\n\n## When the keeper wins\n\n> Well pruned. I will let the fallen rest a while before I ask them to return.\n\n## At a draw\n\n> Both gardens bare at once. The ground will keep the seeds for next time.",
     "related": [
       "tavern/the-bill-of-fare",
       "grimoire/deepfen"
@@ -8,29 +8,34 @@
     "choices": []
   },
   "tavern/daven-greyquay": {
-    "body": "## Across the table\n\n> Keep your eyes on the sky, keeper. The river has taught me to go around things.\n\n## When the guest wins\n\n> Nothing of yours could reach my gulls. Next time, bring a net.\n\n## When the keeper wins\n\n> You found the one wall I could not fly over. Fair sailing, that.\n\n## At a draw\n\n> Two ships, one tide, and neither reaches shore first. I have seen stranger crossings.",
+    "body": "A stretch of solid floor is a pleasure after a voyage. Daven brings a Glass Tide sailor’s sense of open water to the table. While a rival guards the road through the middle, the gulls are already overhead.\n\n## Across the table\n\n> Keep your eyes on the sky, keeper. The river has taught me to go around things.\n\n## When the guest wins\n\n> Nothing of yours could reach my gulls. Next time, bring a net.\n\n## When the keeper wins\n\n> You found the one wall I could not fly over. Fair sailing, that.\n\n## At a draw\n\n> Two ships, one tide, and neither reaches shore first. I have seen stranger crossings.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/bera-kilnhand": {
-    "body": "## Across the table\n\n> I do not wait for the iron to cool. Expect me early.\n\n## When the guest wins\n\n> Struck while it was hot. You will want blockers on the table sooner.\n\n## When the keeper wins\n\n> You held the line until my hammer tired. That is good work.\n\n## At a draw\n\n> We both hit the anvil at once. Nobody got the blade.",
+    "body": "Bera judges a card by how many years of service it has left in it. The smith who will keep a good tool for a lifetime can also tell, within a hammer stroke, when waiting any longer will spoil the work. A slow opening hand is a gift to Bera.\n\n## Across the table\n\n> I do not wait for the iron to cool. Expect me early.\n\n## When the guest wins\n\n> Struck while it was hot. You will want blockers on the table sooner.\n\n## When the keeper wins\n\n> You held the line until my hammer tired. That is good work.\n\n## At a draw\n\n> We both hit the anvil at once. Nobody got the blade.",
     "related": [
+      "characters/erilian-kantonine",
       "tavern/the-bill-of-fare",
       "grimoire/iron-covenant"
     ],
     "choices": []
   },
   "tavern/mara-quill": {
-    "body": "## Across the table\n\n> I read before I write, and I answer before I act. Cast carefully.\n\n## When the guest wins\n\n> Every important spell of yours met a footnote. Perhaps bait me with a lesser one first.\n\n## When the keeper wins\n\n> I held my answers too long and the question moved on. Noted, keeper.\n\n## At a draw\n\n> An unfinished chapter. I will bring a sharper pen.",
+    "body": "Mara asks after the shelves before sitting down to play. There is usually time to let the other player finish a proposition before adding a footnote. The trick, as this traveling scholar occasionally has to admit, is knowing when the question has changed.\n\n## Across the table\n\n> I read before I write, and I answer before I act. Cast carefully.\n\n## When the guest wins\n\n> Every important spell of yours met a footnote. Perhaps bait me with a lesser one first.\n\n## When the keeper wins\n\n> I held my answers too long and the question moved on. Noted, keeper.\n\n## At a draw\n\n> An unfinished chapter. I will bring a sharper pen.",
     "related": [
+      "characters/maude-of-grey-weir",
+      "characters/ilthen-vael",
+      "fieldbook/reading-a-waystation",
+      "characters/erilian-kantonine",
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/ser-hadrin-fell": {
-    "body": "## Across the table\n\n> A charge decides more than a siege. I intend to prove it at your table.\n\n## When the guest wins\n\n> Your gate opened a turn too late. Hold your defenders back when the March rides.\n\n## When the keeper wins\n\n> A charge broken on a patient wall. I salute the wall.\n\n## At a draw\n\n> Two banners down together. The pass has seen such days.",
+    "body": "A winter guarding a Cinder March pass is a long apprenticeship in waiting. Hadrin has done enough of that for one season. The knight is glad to share the hearth and equally glad of a clear lane for a charge.\n\n## Across the table\n\n> A charge decides more than a siege. I intend to prove it at your table.\n\n## When the guest wins\n\n> Your gate opened a turn too late. Hold your defenders back when the March rides.\n\n## When the keeper wins\n\n> A charge broken on a patient wall. I salute the wall.\n\n## At a draw\n\n> Two banners down together. The pass has seen such days.",
     "related": [
       "tavern/the-bill-of-fare",
       "peoples/cinder-march"
@@ -38,7 +43,7 @@
     "choices": []
   },
   "tavern/orren-sallow": {
-    "body": "## Across the table\n\n> Every threat has a price, and I usually carry the coin to remove it.\n\n## When the guest wins\n\n> I bought every piece you put down. Bring more than one good bargain.\n\n## When the keeper wins\n\n> You offered more than I could buy. A merchant knows when the market has turned.\n\n## At a draw\n\n> Even trade. The ledger balances and nobody profits.",
+    "body": "Orren arrives carrying three rumors and some spending money. At the card table the merchant does what comes naturally on the road, finding the price at which a difficult piece of business can be made to disappear.\n\n## Across the table\n\n> Every threat has a price, and I usually carry the coin to remove it.\n\n## When the guest wins\n\n> I bought every piece you put down. Bring more than one good bargain.\n\n## When the keeper wins\n\n> You offered more than I could buy. A merchant knows when the market has turned.\n\n## At a draw\n\n> Even trade. The ledger balances and nobody profits.",
     "related": [
       "tavern/the-bill-of-fare",
       "grimoire/witness-roads"
@@ -46,7 +51,7 @@
     "choices": []
   },
   "tavern/nessa-reedpath": {
-    "body": "## Across the table\n\n> I keep what I carry. You will have to come through my companions to reach me.\n\n## When the guest wins\n\n> You spent your strength on my shields. Try going around them next time.\n\n## When the keeper wins\n\n> The bridge held until you found the far bank. A fair delivery.\n\n## At a draw\n\n> Both letters lost in the same river. We will write again.",
+    "body": "A bridge is a good evening’s work when the letter is still dry on the other side. Nessa treats companions at the table like a courier’s escort. Anyone intent on the dispatch must first find a way around them.\n\n## Across the table\n\n> I keep what I carry. You will have to come through my companions to reach me.\n\n## When the guest wins\n\n> You spent your strength on my shields. Try going around them next time.\n\n## When the keeper wins\n\n> The bridge held until you found the far bank. A fair delivery.\n\n## At a draw\n\n> Both letters lost in the same river. We will write again.",
     "related": [
       "tavern/the-bill-of-fare",
       "grimoire/witness-roads"
@@ -54,50 +59,51 @@
     "choices": []
   },
   "tavern/tora-ashward": {
-    "body": "## Across the table\n\n> A warm hearth and ready defenders. Come in, and come slowly.\n\n## When the guest wins\n\n> My companions outlasted yours. Growth beats haste over a long evening.\n\n## When the keeper wins\n\n> You struck before my hearth was warm. Well timed.\n\n## At a draw\n\n> Two tired households. There is still bread for both.",
+    "body": "Tora’s idea of a well-kept hearth includes the household that arrives late. There is bread to go round even at the end of a drawn game. Given time, the Compact warden assembles much the same stubborn company on the table.\n\n## Across the table\n\n> A warm hearth and ready defenders. Come in, and come slowly.\n\n## When the guest wins\n\n> My companions outlasted yours. Growth beats haste over a long evening.\n\n## When the keeper wins\n\n> You struck before my hearth was warm. Well timed.\n\n## At a draw\n\n> Two tired households. There is still bread for both.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/vey-mossglass": {
-    "body": "## Across the table\n\n> What falls at my table tends to be remembered, and what is remembered tends to return.\n\n## When the guest wins\n\n> Every companion you removed came back with a grudge. Answer the memory, not just the card.\n\n## When the keeper wins\n\n> You left nothing worth recovering. A tidy, cruel victory.\n\n## At a draw\n\n> Two empty shelves. Something will be found for next time.",
+    "body": "An antiquarian has a professional interest in the things other people leave behind. Vey examines a broken promise with the same care as a surviving one. Even the discard pile deserves a second look when Vey sits opposite.\n\n## Across the table\n\n> What falls at my table tends to be remembered, and what is remembered tends to return.\n\n## When the guest wins\n\n> Every companion you removed came back with a grudge. Answer the memory, not just the card.\n\n## When the keeper wins\n\n> You left nothing worth recovering. A tidy, cruel victory.\n\n## At a draw\n\n> Two empty shelves. Something will be found for next time.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/pella-copperstring": {
-    "body": "## Across the table\n\n> My songs need a lead. Expect a Hero on the table before the second verse.\n\n## When the guest wins\n\n> The chorus carried it. Strike the singer before the song gets going.\n\n## When the keeper wins\n\n> You silenced my lead early. The rest of the band could not carry it.\n\n## At a draw\n\n> A duet with no ending. Audiences hate those.",
+    "body": "Pella hears a hand of cards as a song and wants a lead voice by the second verse. The balladeer is quite willing to share the chorus. An opponent who removes the singer early gets to hear what the rest of the band can do alone.\n\n## Across the table\n\n> My songs need a lead. Expect a Hero on the table before the second verse.\n\n## When the guest wins\n\n> The chorus carried it. Strike the singer before the song gets going.\n\n## When the keeper wins\n\n> You silenced my lead early. The rest of the band could not carry it.\n\n## At a draw\n\n> A duet with no ending. Audiences hate those.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/adra-honeyreed": {
-    "body": "## Across the table\n\n> The hive swarms before the keeper is ready. So do I.\n\n## When the guest wins\n\n> A swarm early is worth a dragon late. Block small, block early.\n\n## When the keeper wins\n\n> You smoked the hive calm before it could sting. Clever keeper.\n\n## At a draw\n\n> Both of us stung out at once. The honey keeps.",
+    "body": "Adra’s first news is that the hives came through the rain. A Reedbound beekeeper has good reason to count many small lives as a single household. At the table an opponent can lose a surprising amount of ground while waiting for something larger to arrive.\n\n## Across the table\n\n> The hive swarms before the keeper is ready. So do I.\n\n## When the guest wins\n\n> A swarm early is worth a dragon late. Block small, block early.\n\n## When the keeper wins\n\n> You smoked the hive calm before it could sting. Clever keeper.\n\n## At a draw\n\n> Both of us stung out at once. The honey keeps.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/hobb-lanternwake": {
-    "body": "## Across the table\n\n> I take the quiet crossings. Watch for what comes over the water, not across it.\n\n## When the guest wins\n\n> You guarded the road and I took the river. A ferryman's habit.\n\n## When the keeper wins\n\n> You met me at the landing with a lantern. Nothing to be done about that.\n\n## At a draw\n\n> The current took both boats. We will meet on the far bank.",
+    "body": "Hobb comes in after the last crossing for the pleasure of sitting on something that stays still. A Sallow ferryman knows how different the river looks from the landing. Guard the road too closely and Hobb will come round by water.\n\n## Across the table\n\n> I take the quiet crossings. Watch for what comes over the water, not across it.\n\n## When the guest wins\n\n> You guarded the road and I took the river. A ferryman's habit.\n\n## When the keeper wins\n\n> You met me at the landing with a lantern. Nothing to be done about that.\n\n## At a draw\n\n> The current took both boats. We will meet on the far bank.",
     "related": [
+      "characters/talen-fordkeeper",
       "tavern/the-bill-of-fare",
       "places/loamferry"
     ],
     "choices": []
   },
   "tavern/dorr-slatefoot": {
-    "body": "## Across the table\n\n> I lay each stone where it will stay. Try moving one.\n\n## When the guest wins\n\n> You wore yourself out on my wall. Walls are what I do.\n\n## When the keeper wins\n\n> You found the loose stone. Every wall has one, if you are patient.\n\n## At a draw\n\n> Two walls, no roof. Still a dry night.",
+    "body": "Dorr likes a wall that will still be standing when the argument about how long it took to build has been forgotten. The Covenant mason plays with the same patience. This is a guest to catch early in the evening.\n\n## Across the table\n\n> I lay each stone where it will stay. Try moving one.\n\n## When the guest wins\n\n> You wore yourself out on my wall. Walls are what I do.\n\n## When the keeper wins\n\n> You found the loose stone. Every wall has one, if you are patient.\n\n## At a draw\n\n> Two walls, no roof. Still a dry night.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/ysra-paleink": {
-    "body": "## Across the table\n\n> I keep an account of every threat. Most of them end up filed.\n\n## When the guest wins\n\n> Each of your important spells was noted and answered. Vary the ledger.\n\n## When the keeper wins\n\n> I answered the wrong page. The account is yours this time.\n\n## At a draw\n\n> A ledger closed in balance. Rare, and oddly satisfying.",
+    "body": "A keeper of lost accounts must remember where the missing entry belongs. Ysra brings that habit to the grimoire. A space on the shelf can say almost as much as the volume on either side of it.\n\n## Across the table\n\n> I keep an account of every threat. Most of them end up filed.\n\n## When the guest wins\n\n> Each of your important spells was noted and answered. Vary the ledger.\n\n## When the keeper wins\n\n> I answered the wrong page. The account is yours this time.\n\n## At a draw\n\n> A ledger closed in balance. Rare, and oddly satisfying.",
     "related": [
       "tavern/the-bill-of-fare",
       "grimoire/witness-roads"
@@ -105,42 +111,42 @@
     "choices": []
   },
   "tavern/mira-wickward": {
-    "body": "## Across the table\n\n> A small light that cannot be reached outlasts a big one that can.\n\n## When the guest wins\n\n> You never reached my lamps. Bring something that can climb.\n\n## When the keeper wins\n\n> You had the reach to snuff every wick. Dark, but fair.\n\n## At a draw\n\n> Both lamps out together. Dawn will come anyway.",
+    "body": "By the time Mira reaches the tavern every lamp on the Grey Weir round is lit. A traveler walking into town after dark sees a row of lights. The lamplighter knows each as a separate wick that had to catch.\n\n## Across the table\n\n> A small light that cannot be reached outlasts a big one that can.\n\n## When the guest wins\n\n> You never reached my lamps. Bring something that can climb.\n\n## When the keeper wins\n\n> You had the reach to snuff every wick. Dark, but fair.\n\n## At a draw\n\n> Both lamps out together. Dawn will come anyway.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/jory-claythumb": {
-    "body": "## Across the table\n\n> I shape fast and fire early. Slow hands lose the pot.\n\n## When the guest wins\n\n> Fired before you set. Keep a blocker for the first kiln.\n\n## When the keeper wins\n\n> You let my clay cool. A patient hand beats a quick one, sometimes.\n\n## At a draw\n\n> Both pots cracked in the kiln. There is more clay.",
+    "body": "Turn a pot in the hand and the wall tells you where a thumb pressed too hard. Jory reads a hand of cards with a potter’s attention to small errors. A move made in haste has a way of showing up later.\n\n## Across the table\n\n> I shape fast and fire early. Slow hands lose the pot.\n\n## When the guest wins\n\n> Fired before you set. Keep a blocker for the first kiln.\n\n## When the keeper wins\n\n> You let my clay cool. A patient hand beats a quick one, sometimes.\n\n## At a draw\n\n> Both pots cracked in the kiln. There is more clay.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/sella-bellrest": {
-    "body": "## Across the table\n\n> I defend what I carry, and I carry a great deal. Take your time.\n\n## When the guest wins\n\n> Each companion you sent was met and remembered. Try the air, or many at once.\n\n## When the keeper wins\n\n> You broke through the quiet. I will add this evening to my names.\n\n## At a draw\n\n> Both bells rung at once. A strange, fair silence.",
+    "body": "Sella carries names between households. Sometimes a family wants to remember a joke or a good supper, and the memorial keeper makes room for that too. An evening playing cards is quite compatible with the work of mourning.\n\n## Across the table\n\n> I defend what I carry, and I carry a great deal. Take your time.\n\n## When the guest wins\n\n> Each companion you sent was met and remembered. Try the air, or many at once.\n\n## When the keeper wins\n\n> You broke through the quiet. I will add this evening to my names.\n\n## At a draw\n\n> Both bells rung at once. A strange, fair silence.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/iven-shardwake": {
-    "body": "## Across the table\n\n> My Hero is the mirror; my spells are the light. Watch which one you answer.\n\n## When the guest wins\n\n> You spent your answers on my spells, and my Hero finished the work. Mind the mirror.\n\n## When the keeper wins\n\n> You broke the mirror before it caught the light. Cleanly done.\n\n## At a draw\n\n> Two mirrors facing. Nobody can tell which reflection fell first.",
+    "body": "The river that a pilot reads for shoals is a mirror to Iven. Heat and a steady hand let a Glass Tide glasswright bring something of that surface indoors. Both are qualities worth having across a card table.\n\n## Across the table\n\n> My Hero is the mirror; my spells are the light. Watch which one you answer.\n\n## When the guest wins\n\n> You spent your answers on my spells, and my Hero finished the work. Mind the mirror.\n\n## When the keeper wins\n\n> You broke the mirror before it caught the light. Cleanly done.\n\n## At a draw\n\n> Two mirrors facing. Nobody can tell which reflection fell first.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/branna-briarstitch": {
-    "body": "## Across the table\n\n> Cut my hedge if you like. Hedges grow back thicker.\n\n## When the guest wins\n\n> Every trade favored the briar. Do not fight me stem for stem.\n\n## When the keeper wins\n\n> You went over rather than through. The hedge admits defeat.\n\n## At a draw\n\n> Both paths overgrown. We will cut them again.",
+    "body": "Branna knows what a season of neglect can do to a path. People may still remember precisely where it ran and find their way barred by briars. Telling a familiar story in a full room is one way the hedge tender keeps a track open.\n\n## Across the table\n\n> Cut my hedge if you like. Hedges grow back thicker.\n\n## When the guest wins\n\n> Every trade favored the briar. Do not fight me stem for stem.\n\n## When the keeper wins\n\n> You went over rather than through. The hedge admits defeat.\n\n## At a draw\n\n> Both paths overgrown. We will cut them again.",
     "related": [
       "tavern/the-bill-of-fare"
     ],
     "choices": []
   },
   "tavern/odel-rimefolio": {
-    "body": "## Across the table\n\n> I write slowly and answer only what matters. Do not expect me to waste ink.\n\n## When the guest wins\n\n> I answered the few spells that counted and let the rest drift. Keep your ink dry.\n\n## When the keeper wins\n\n> I held my answers for a storm that never came. A page for you, keeper.\n\n## At a draw\n\n> Snow on both ledgers. The season decides nothing.",
+    "body": "A fall of snow leaves the northern roads as clean as a fresh page. Odel comes to borrow ink before the tracks fill in again. A guestbook gives the people who reached a warm room a place to set down their names.\n\n## Across the table\n\n> I write slowly and answer only what matters. Do not expect me to waste ink.\n\n## When the guest wins\n\n> I answered the few spells that counted and let the rest drift. Keep your ink dry.\n\n## When the keeper wins\n\n> I held my answers for a storm that never came. A page for you, keeper.\n\n## At a draw\n\n> Snow on both ledgers. The season decides nothing.",
     "related": [
       "tavern/the-bill-of-fare",
       "places/hoarhold"
