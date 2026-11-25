@@ -1,0 +1,75 @@
+{
+  "fieldbook/earth-and-water": {
+    "body": "## A surveyor’s country\n\nGrasslands give way to the steppe and the dry chalk country. In the north, travelers pass from temperate forest into taiga and open tundra. A mountain crossing takes a different reckoning again. Rainforest, marsh, desert, ash scrub and the open ocean each have their own demands.\n\n## Water beneath the feet\n\nAt a fresh spring a household can lay out a garden. On waterlogged ground it may spend a season draining a field before it can sow. The same wet ground that frustrates a plough can feed a reed bed or yield peat for fuel. Along the shore, a pale stir beneath the surface can mark rich shoals.\n\n## Wood and pasture\n\nOld growth holds living records as well as timber. A managed woodlot must leave something for the next cutter. Heartwood goes to shields and workshop beams. On the steppe, wild horses supply the remount yards.\n\n## What comes out of the ground\n\nIronstone goes to heavy civic works and armor. Red copper supplies tools and fittings. Pale Witness silver pays for exacting instruments. An ore seam may be easy to see and expensive to work.\n\n## What can be kept\n\nHearthgrain gathered into a grange can feed a town long after harvest. White salt keeps provisions fit for a longer journey. Ashfall glass has quite another value: the vitrified fragments in a field make it harder to farm, but preserve traces of the catastrophe that made them. The fragments have yet to settle its cause.",
+    "related": [
+      "places/wrackpool",
+      "places/quickfallow",
+      "places/the-glass-orchard"
+    ],
+    "choices": []
+  },
+  "fieldbook/works-of-the-hearth": {
+    "body": "## The settled hearth\n\nThe root cellar, cinder workshop, charter market, Witness archive and charter harbor each hold a different part of a town’s wealth. Grain keeps a household alive; a record kept dry can keep its claim alive.\n\n## Fields and wet ground\n\nTerraced fields keep arable steps on sloping ground. A spring garden draws on fresh water. A polder depends on its sluices. In a marsh, maintaining reedworks can be a better livelihood than trying to make the ground behave like dry land.\n\n## Wood, stone and the shore\n\nManaged woodlots set cutting against regrowth. A grove archive protects woodland records. In the hills, a measured quarry works dressed stone and oreworks lift the deeper seams. On the coast a shore fishery brings in food; a tide observatory keeps a watch on the water and the ships that return.\n\n## The eight trades\n\nThe hearthgrain grange takes in grain; the ironstone mine and copper mine supply the workshops. A salt house keeps provisions, a heartwood yard stacks timber, and a remount yard tends horses. The silver mine supplies Witness silver. An ashglass refinery works the residue of the Ashfall.",
+    "related": [
+      "places/ninearch",
+      "places/highseam",
+      "places/lockmouth"
+    ],
+    "choices": []
+  },
+  "fieldbook/roads-and-companies": {
+    "body": "## Leaving a hearth\n\nThe hearth caravan carries what a new settlement needs. A Wayfinder ranges beyond familiar ground. The Oath guard stays close to the people and goods under its protection.\n\n## The companies on foot\n\nThe long pikes of an Ash pike company show above the front rank. Cinder plate cohorts bear heavy armor. Reed skirmishers travel light; Witness arbalesters bring workshop craft to the field. The Kiln halberdiers carry polearms and the weight of their armor.\n\n## Riders and hulls\n\nCharter outriders range farther than a column on foot. Road lancers are the heavier mounted company. When the road ends, a charter transport can carry a company across water. Coastwatch galleys escort ships near shore; Deepwake warships can go into the open ocean.",
+    "related": [
+      "peoples/cinder-march",
+      "peoples/sable-steppe"
+    ],
+    "choices": []
+  },
+  "fieldbook/public-offices": {
+    "body": "## Hearth marshal\n\nA marshal answers for the people who march under the hearth’s banner. The muster rolls, the last standard and the keeping of a line are parts of that office. At home a marshal may sit as Warden of the Walls.\n\n## Road witness\n\nA road witness goes out with an escort and returns with a record of the ground crossed. Route memory and horizon studies enlarge the part of the country that a hearth can know. The Keeper of the Roll has work to do at home as well as on the road.\n\n## March engineer\n\nThe march engineer travels with the column. A travelling store, a field workshop, a refit after losses and an account of a breach all need a practiced hand.\n\n## Waykeeper\n\nA Waykeeper studies what a person with a particular aptitude can actually do. Flame and Rune answer to different gifts. The history of the Roads is full of people who knew a working they could never perform.\n\n## Warden of the Walls\n\nA marshal who sits in a hearth drills its levy and keeps its fields and granary guarded; the hearth eats the better for it.\n\n## Keeper of the Roll\n\nA surveyor who sits in a hearth keeps its roll of land and tenants, and the dues come in.\n\n## Master of Works\n\nAn engineer who sits in a hearth orders its works, and less is wasted.\n\n## Reader of the Seams\n\nA Waykeeper who sits in a hearth reads for its scholars, and they learn the faster.",
+    "related": [],
+    "choices": []
+  },
+  "fieldbook/craft-and-custom": {
+    "body": "## Measuring and keeping\n\nCinder masonry uses kiln forms that another workshop can use again. Civic accounts put bargains in a public record. Surveyed estates depend on a boundary that witnesses will recognize. Seasonal stewardship records who may plant and who must share water.\n\n## At water and in the woods\n\nSluice waterworks make polders possible. Charter forestry ties cutting rights to the keeping of living records. Counterweighted cranes lift what ordinary muscle cannot bring out of a seam.\n\n## Beyond the harbor\n\nCoastal navigation follows the familiar shore. Ocean navigation needs charts and rigging that can last beyond sight of land. Deep soundings bring the observations of returning ships together at the shore.\n\n## The common store\n\nA charter compact favors shared market charters. Common stewardship gives priority to communal stores. Even the organization of a column records a choice: shield cohesion binds a formation together; march columns arrange the relays that keep it moving.",
+    "related": [
+      "peoples/ashen-compact",
+      "places/lodestair",
+      "peoples/reedbound-council"
+    ],
+    "choices": []
+  },
+  "fieldbook/the-waykeepers": {
+    "body": "## Flame and Rune\n\nA Flame aptitude concerns bounded heat and ember workings. Rune concerns inscribed bindings and protection. Either gift takes study. A discovery in a realm’s archive cannot supply the personal aptitude to use it.\n\n## Three workings\n\nContained ember projection gives a Flame-gifted Waykeeper the Cinder thread. Measured rune binding sustains a Bound ward. Measured unbinding allows a Rune-gifted keeper to undo another binding.\n\n## At the edge of the record\n\nAn Oath guard can set shields by training. The practice costs the guard effort; it belongs to the company’s drill. For Ilthen’s distinction between an inherited spring of magic and a learned discipline, turn to his [Fourteen Traditions](/theandril/atlas/chronicle/appendix-the-fourteen-traditions).",
+    "related": [
+      "chronicle/appendix-the-fourteen-traditions",
+      "chronicle/v-the-recorder-s-bargain"
+    ],
+    "choices": []
+  },
+  "fieldbook/ages-of-a-realm": {
+    "body": "## The Age of Fracture\n\nThe Witness Roads have failed and distant bargains no longer bind the hearthlands. Scattered hearths set their claims upon the land.\n\n## The Age of Roads\n\nThe hearthlands are settled wide enough that roads, charters and tolls bind them again, and what one hearth does is felt at the next.\n\n## The Age of Seams\n\nA seam has been found under the Ashfall glass, and what lies there is known to the world: the roads carry rumours of it, and pilgrims.\n\n## The Age of Bids\n\nA public bid for the world’s future is open. Every realm knows the campaign will end, and every hearth feels the fever of it.",
+    "related": [
+      "chronicle/x-the-present-hour"
+    ],
+    "choices": []
+  },
+  "fieldbook/hard-seasons": {
+    "body": "## The Grey Winter\n\nA winter that does not break. The passes close early, the roads carry nothing, and every hearth eats from its stores.\n\nBuy grain on the roads and lay it in before the passes close; the hearths eat through the winter.\n\n## The Toll Wars\n\nThe wardens of the roads fall out over who may take a toll, and every cart pays twice until it is settled.\n\nBuy the wardens’ peace with one payment and the realm’s carts pass free.\n\n## The Glass Fever\n\nA fever follows the seam rumours up the roads and into the archives; the clerks who read the most fall first.\n\nPay the surgeons and close the archives to the sick; the clerks keep their work.\n\n## The Tremors\n\nThe ground under the glass moves at night. Walls crack, cisterns drain, and no hearth is sure of its footing.\n\nShore every wall and cistern before the ground moves again; the hearths stand.\n\n## The Fever of the End\n\nWith a bid for the world’s future open, every merchant hoards and every market empties; the coin goes to ground.\n\nGuarantee the markets from the treasury and the merchants trade on.\n\n## The Long Dark\n\nAsh on the wind blots the sun for a season; the fields yield and rot in the same week.\n\nBring the harvest under cover and salt what can be salted; the stores hold.\n\n## The Valley Blight\n\nA blight in the grain of one valley, carried from field to field on the carts; every hearth around it eats into its seed.\n\nBurn the blighted fields and buy clean seed from beyond the valley; the stores hold.\n\n## The Glass Storm\n\nA wind off the Ashfall glass that cuts like thrown knives; every roof and wall in its path is scored.\n\nShutter every hearth in the storm’s path and pay the roofers in advance; the walls stand.\n\n## The Bread Riots\n\nThe price of bread in one market breaks the peace of every hearth that buys there; the granaries are stormed by night.\n\nOpen the granaries at the old price from the treasury; the riots have nothing to feed on.",
+    "related": [
+      "council/bumper-harvest",
+      "places/hoarhold"
+    ],
+    "choices": []
+  },
+  "fieldbook/the-broken-witness": {
+    "body": "In RR 2311 the Witness Roads failed. Two years later came the Ashfall. Where the stations once joined distant communities, their ruins now divide the hearthlands. In the year 2447 a map of a pass and the word of someone who has crossed it are precious again.\n\n## Survivors and successors\n\nThe Iron Covenant closed its passes. The Mire Courts and the Sepulchral Synod endured. The Saltwind League collapsed, and the Null Throne fell. The Saltwind and Wardhall Remnants carry practices out of those ruins; neither holds the old authority.\n\n## Reading a banner\n\nA banner can stand for several peoples. Households travel, marry, take service elsewhere and quarrel with their own councils. An ancestry tells you little about which promises its children will keep. The four rekindled powers occupy much of Ilthen’s account; beyond them, the hearthlands have many more voices.\n\n## Reading a witness\n\nIlthen distinguishes what he saw from what he copied. He leaves the builders’ motives and the cause of the Ashfall unsettled. Erilian keeps another sort of collection at his tavern. A painting in his grimoire can put a face to an ordinary keeper without making that face a historical witness.",
+    "related": [
+      "chronicle/the-book-of-broken-roads",
+      "peoples/iron-covenant",
+      "peoples/wardhall-remnant",
+      "grimoire/the-quiet"
+    ],
+    "choices": []
+  }
+}

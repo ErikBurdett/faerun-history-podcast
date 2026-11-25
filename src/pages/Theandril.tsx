@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { atlasRoot } from '../data/atlasShelves';
 import { useRef, useState } from 'react';
 import { ArrowDown, ArrowUpRight, ChevronLeft, ChevronRight, Expand, X } from 'lucide-react';
 import FolioHero from '../components/FolioHero';
@@ -51,7 +53,7 @@ export default function Theandril() {
   return <div className="folio-page world-page">
     <FolioHero art="gilded-reach" alt="The Gilded Reach, with autumn oaks, a winding river, and distant towers." label="An original fantasy world" title="Theandril">
       <p className="hero-lede">We’re building Theandril in partnership with <a className="underline underline-offset-4" href="https://dharmawebsolutions.com">Dharma Web Solutions</a>. This original world is home to two games and a new podcast narrated by Erilian Kantonine.</p>
-      <div className="folio-actions"><a className="gilt-button" href="#games">Explore the games <ArrowDown size={16}/></a><a className="quiet-link" href="#world">Read the world guide <ArrowDown size={15}/></a></div>
+      <div className="folio-actions"><Link className="gilt-button" to={atlasRoot}>Enter the atlas <ArrowUpRight size={16}/></Link><a className="quiet-link" href="#games">Explore the games <ArrowDown size={15}/></a></div>
     </FolioHero>
 
     <section id="world" className="folio-width world-guide">
@@ -59,7 +61,7 @@ export default function Theandril() {
       <div className="guide-copy"><p>In year 2311 of the Road Reckoning, the Witness Roads failed. Bargains once trusted across a continent had to be made again, face to face. Two years later came the Ashfall. Its cause is still disputed.</p>
         <p>By 2447, a map of a pass or the name of a family willing to shelter a stranger can decide whether a journey succeeds. The Ashen Compact’s craft households make their oaths in public. Downriver, the Reedbound Council settles disputes between boat families and the people who drain the banks. On the coast, the charter towns of Glass Tide must agree who will pay to open a dangerous route.</p>
         <p>Both games begin in this world. One gives you a table at the river’s edge. The other puts the next settlement in your hands.</p>
-        <a className="quiet-link world-book" href="https://github.com/ErikBurdett/Theandril/blob/master/docs/lore/The%20Book%20of%20Broken%20Roads/The%20Book%20of%20Broken%20Roads.md">Read The Book of Broken Roads <ArrowUpRight size={16}/></a>
+        <div className="mini-links world-book"><Link to={atlasRoot+'/chronicle/the-book-of-broken-roads'}>Read Ilthen’s chronicle <ArrowUpRight size={14}/></Link><Link to={atlasRoot+'/places'}>Follow the roads <ArrowUpRight size={14}/></Link><Link to={atlasRoot+'/grimoire'}>Open Erilian’s grimoire <ArrowUpRight size={14}/></Link></div>
       </div>
     </section>
 

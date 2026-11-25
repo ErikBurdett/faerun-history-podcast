@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import Theandril from './pages/Theandril';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -14,12 +14,14 @@ import Contact from './pages/Contact';
 import Sponsors from './pages/Sponsors';
 import Library from './pages/Library';
 
+const TheandrilAtlas = lazy(() => import('./pages/TheandrilAtlas'));
+
 function App() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
     if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
     else window.scrollTo({ top: 0, behavior: 'instant' });
-    document.title = pathname === '/theandril' ? 'Theandril | The Lich’s Tale' : 'The Lich’s Tale | A Faerûn Lorecast';
+    if (!pathname.startsWith('/theandril/atlas')) document.title = pathname === '/theandril' ? 'Theandril | The Lich’s Tale' : 'The Lich’s Tale | A Faerûn Lorecast';
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', new URL(pathname, 'https://taleofthelich.com').href);
   }, [pathname, hash]);
 
@@ -31,6 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/theandril" element={<Theandril />} />
+          <Route path="/theandril/atlas/:shelf?/:leaf?" element={<Suspense fallback={<p className="folio-width pt-28" role="status">Opening the atlas…</p>}><TheandrilAtlas /></Suspense>} />
           <Route path="/episodes" element={<Episodes />} />
           <Route path="/listen" element={<Playlist />} />
           <Route path="/watch" element={<Watch />} />
