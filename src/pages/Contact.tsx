@@ -1,3 +1,4 @@
+import ArchiveHeading from '../components/ArchiveHeading';
 import { motion } from 'framer-motion';
 import { Globe, Headphones, Mail, ScrollText, Youtube } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
@@ -6,27 +7,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
-        >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-mana-500/10 border border-mana-500/30 mb-6"
-          >
-            <Mail className="w-4 h-4 text-mana-300" />
-            <span className="text-mana-200 text-sm tracking-wide">
-              Contact the Archive
-            </span>
-          </motion.div>
-          <h1 className="section-heading mb-4">Contact</h1>
-          <p className="text-ink-200 max-w-2xl mx-auto text-lg">
-            Requests, corrections, guest ideas, and lore rabbit holes welcome.
-          </p>
-        </motion.div>
+        <ArchiveHeading title="Write to the archive" art="cartography">
+          Send Erilian an episode request, a correction, or a question about the Realms.
+        </ArchiveHeading>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[

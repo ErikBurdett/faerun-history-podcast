@@ -1,3 +1,4 @@
+import ArchiveHeading from '../components/ArchiveHeading';
 import { motion } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
 import {
@@ -5,7 +6,6 @@ import {
   Clock,
   Download,
   ExternalLink,
-  Headphones,
   Search,
 } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
@@ -59,23 +59,9 @@ const Episodes = () => {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-mana-500/10 border border-mana-500/30 mb-6">
-            <Headphones className="w-4 h-4 text-mana-300" />
-            <span className="text-mana-200 text-sm tracking-wide">
-              Episodes Archive
-            </span>
-          </div>
-          <h1 className="section-heading mb-4">Episodes</h1>
-          <p className="text-ink-200 max-w-2xl mx-auto text-lg">
-            Each episode is a candlelit page-turn through Faerûn’s shadowed
-            history. Listen on-site, or open the show on Spotify.
-          </p>
-        </motion.div>
+        <ArchiveHeading title="Episode archive" art="erilian-small">
+          Listen to the histories of Faerûn. Search the archive by name, place, or episode.
+        </ArchiveHeading>
 
         <motion.section
           initial={{ opacity: 0, y: 18 }}
@@ -99,6 +85,7 @@ const Episodes = () => {
           </div>
           <div className="rounded-xl border border-ink-800 bg-ink-950/40 overflow-hidden">
             <iframe
+              title="The Lich’s Tale on Spotify"
               data-testid="embed-iframe"
               style={{ borderRadius: 12 }}
               src={siteInfo.externalLinks.spotifyShowEmbed}

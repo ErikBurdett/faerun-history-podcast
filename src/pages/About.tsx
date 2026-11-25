@@ -1,27 +1,15 @@
+import ArchiveHeading from '../components/ArchiveHeading';
 import { motion } from 'framer-motion';
-import { BookOpenText, Headphones, ScrollText, Skull, UserRound } from 'lucide-react';
+import { BookOpenText, Headphones, ScrollText, UserRound } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
 
 const About = () => {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-14"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-wraith-500/10 border border-wraith-500/30 mb-6">
-            <Skull className="w-4 h-4 text-wraith-300" />
-            <span className="text-wraith-200 text-sm tracking-wide">
-              About the Show
-            </span>
-          </div>
-          <h1 className="section-heading mb-4">What is {siteInfo.title}?</h1>
-          <p className="text-ink-200 max-w-2xl mx-auto text-lg">
-            {siteInfo.description}
-          </p>
-        </motion.div>
+        <ArchiveHeading title="About The Lich’s Tale" art="erilian-small">
+          From the Hidden Stacks beneath Waterdeep, Erilian Kantonine tells the histories of the Forgotten Realms.
+        </ArchiveHeading>
 
         <div className="grid md:grid-cols-3 gap-6">
           {[
@@ -96,11 +84,7 @@ const About = () => {
                 <div className="md:col-span-2">
                   <div className="card-glow p-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-candle-500/80 via-mana-500/70 to-wraith-500/60 border border-ink-800 flex items-center justify-center shadow-lg shadow-mana-500/20">
-                        <span className="font-display font-bold text-ink-950 tracking-wide">
-                          EC
-                        </span>
-                      </div>
+                      <img src="/assets/folio/erilian-small.webp" alt="Erilian Kantonine" loading="lazy" className="h-20 w-20 object-cover rounded border border-candle-500/30" />
                       <div className="min-w-0">
                         <h3 className="text-xl font-display font-semibold text-bone-50 leading-tight">
                           {siteInfo.host.name}

@@ -1,4 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import Theandril from './pages/Theandril';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -13,39 +15,37 @@ import Sponsors from './pages/Sponsors';
 import Library from './pages/Library';
 
 function App() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
+    else window.scrollTo({ top: 0, behavior: 'instant' });
+    document.title = pathname === '/theandril' ? 'Theandril | The Lich’s Tale' : 'The Lich’s Tale | A Faerûn Lorecast';
+    document.querySelector('link[rel="canonical"]')?.setAttribute('href', new URL(pathname, 'https://taleofthelich.com').href);
+  }, [pathname, hash]);
+
   return (
-    <div className="min-h-screen bg-ink-950 relative">
-      {/* Arcane background pattern */}
-      <div className="fixed inset-0 bg-runes opacity-70 pointer-events-none" />
-      <div className="fixed inset-0 noise pointer-events-none" />
-      <div className="fixed inset-0 vignette pointer-events-none" />
-
-      {/* Ambient magic glows */}
-      <div className="fixed top-[-140px] left-[18%] w-[560px] h-[560px] bg-mana-500/10 rounded-full blur-[150px] pointer-events-none" />
-      <div className="fixed bottom-[-180px] right-[18%] w-[720px] h-[720px] bg-candle-500/10 rounded-full blur-[190px] pointer-events-none" />
-      <div className="fixed top-[42%] left-[-160px] w-[560px] h-[560px] bg-ember-500/8 rounded-full blur-[190px] pointer-events-none" />
-
-      <div className="relative z-10">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/episodes" element={<Episodes />} />
-            <Route path="/listen" element={<Playlist />} />
-            <Route path="/watch" element={<Watch />} />
-            <Route path="/library" element={<Library />} />
-            <Route path="/library/:category" element={<Library />} />
-            <Route path="/library/:category/:index" element={<Library />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/sponsors" element={<Sponsors />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+    <div className="site-shell">
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Navbar />
+      <main id="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/theandril" element={<Theandril />} />
+          <Route path="/episodes" element={<Episodes />} />
+          <Route path="/listen" element={<Playlist />} />
+          <Route path="/watch" element={<Watch />} />
+          <Route path="/library" element={<Library />} />
+          <Route path="/library/:category" element={<Library />} />
+          <Route path="/library/:category/:index" element={<Library />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

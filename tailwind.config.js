@@ -35,10 +35,10 @@ export default {
         mana: {
           50: '#e9f7ff',
           100: '#d2efff',
-          200: '#a6ddff',
-          300: '#6ec6ff',
-          400: '#3aa6ff',
-          500: '#1f84ff',
+          200: '#dfcaad',
+          300: '#d0ad87',
+          400: '#ba9874',
+          500: '#937450',
           600: '#1567db',
           700: '#124fb0',
           800: '#103d86',
@@ -129,7 +129,7 @@ export default {
         },
         blink: {
           'from, to': { borderColor: 'transparent' },
-          '50%': { borderColor: '#1f84ff' },
+          '50%': { borderColor: '#937450' },
         },
         gradientX: {
           '0%, 100%': { backgroundPosition: '0% 50%' },

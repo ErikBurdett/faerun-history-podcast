@@ -42,12 +42,12 @@ export const siteInfo = {
     officialSite: 'https://taleofthelich.com',
   },
   host: {
-    name: 'Erilian Canternine',
+    name: 'Erilian Kantonine',
     title: 'Baelnorn lich • Lorekeeper',
     profile:
       'Erilian is Candlekeep’s patient curator: a careful voice, a sharp memory, and an incurable affection for footnotes, marginalia, and ruined dynasties.',
     history: [
-      'Erilian Canternine was once an elven scholar who watched libraries burn and names vanish from the record. He learned the hard way that history doesn’t “survive” — it’s protected, copied, carried, and sometimes stolen back.',
+      'Erilian Kantonine was once an elven scholar who watched libraries burn and names vanish from the record. He learned the hard way that history doesn’t “survive” — it’s protected, copied, carried, and sometimes stolen back.',
       'When the choice came between a brief mortal life and an endless vigil, he embraced the Baelnorn rite: lich-form, willingly taken, to preserve lore and safeguard the Realms’ memory. Not for conquest. Not for fear. For the archive.',
       'Now he narrates with the calm of someone who has waited centuries for a single lost citation to resurface — and who intends to keep the story intact, forever.',
     ],

@@ -1,4 +1,5 @@
-import type { ComponentType, CSSProperties, ReactNode } from 'react';
+import ArchiveHeading from '../components/ArchiveHeading';
+import type { ComponentType, ReactNode } from 'react';
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -58,32 +59,6 @@ const CATEGORIES: readonly CategoryDef[] = [
 
 const DEFAULT_CATEGORY = 'spells';
 const PAGE_SIZE = 50;
-
-const STAR_COUNT = 28;
-const STAR_ANGLE = '42deg';
-const STAR_DX = '120vw';
-const STAR_DY = '76vh';
-
-const FALLING_STARS = Array.from({ length: STAR_COUNT }, (_, i) => {
-  const xPct = -22 + ((i * 9) % 140); // -22% .. 118%
-  const yPct = -26 + ((i * 13) % 84); // -26% .. 58%
-  const delay = ((i * 1.35) % 22).toFixed(2);
-  const dur = (11.5 + (i % 9) * 1.15).toFixed(2);
-  const len = 140 + (i % 10) * 18;
-  const size = i % 7 === 0 ? '2.5px' : i % 3 === 0 ? '2px' : '1.5px';
-
-  return {
-    x: `${xPct}%`,
-    y: `${yPct}%`,
-    dx: STAR_DX,
-    dy: STAR_DY,
-    dur: `${dur}s`,
-    delay: `${delay}s`,
-    len: `${len}px`,
-    angle: STAR_ANGLE,
-    size,
-  };
-});
 
 function isValidCategoryKey(category?: string): category is (typeof CATEGORIES)[number]['key'] {
   if (!category) return false;
@@ -713,64 +688,9 @@ function Library() {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <section className="relative overflow-hidden mb-10">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="star-field opacity-60">
-              {FALLING_STARS.map((s, idx) => (
-                <span
-                  key={`${s.x}-${s.y}-${s.delay}-${s.dur}-${idx}`}
-                  className="star"
-                  style={
-                    {
-                      ['--x']: s.x,
-                      ['--y']: s.y,
-                      ['--dx']: s.dx,
-                      ['--dy']: s.dy,
-                      ['--dur']: s.dur,
-                      ['--delay']: s.delay,
-                      ['--len']: s.len,
-                      ['--angle']: s.angle,
-                      ['--size']: s.size,
-                    } as CSSProperties
-                  }
-                />
-              ))}
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-ink-950/5 via-ink-950/40 to-transparent" />
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center relative z-10"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-wraith-500/10 border border-wraith-500/30 mb-6">
-              <BookOpenText className="w-4 h-4 text-wraith-200" />
-              <span className="text-wraith-200 text-sm tracking-wide">
-                SRD Resource Library <span className="text-ink-300">·</span>{' '}
-                Under development
-              </span>
-            </div>
-            <h1 className="section-heading mb-4">The Archive</h1>
-            <p className="text-ink-200 max-w-3xl mx-auto text-lg leading-relaxed">
-              A searchable SRD reference powered by the D&amp;D 5e SRD API. Browse a shelf, then open an entry to read it like a candlelit folio.
-            </p>
-            <p className="text-sm text-ink-200/90 max-w-3xl mx-auto leading-relaxed mt-4">
-              This section is still being built. Expect occasional rough edges as shelves and formatting improve.
-            </p>
-            <p className="text-xs text-ink-300 mt-3">
-              Data source:{' '}
-              <a
-                className="underline underline-offset-4 hover:text-candle-200 transition-colors"
-                href="https://5e-bits.github.io/docs/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                5e SRD API
-              </a>
-            </p>
-          </motion.div>
-        </section>
+        <ArchiveHeading title="The Archive" art="cartography">
+          Browse the shelves of this growing library of spells, creatures, and rules from the <a href="https://5e-bits.github.io/docs/">D&amp;D 5e SRD API</a>.
+        </ArchiveHeading>
 
         <div className="card-glow p-6 md:p-8 mb-8">
           <div className="flex flex-col gap-4">

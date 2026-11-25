@@ -1,25 +1,15 @@
+import ArchiveHeading from '../components/ArchiveHeading';
 import { motion } from 'framer-motion';
-import { ExternalLink, PlaySquare, Youtube } from 'lucide-react';
+import { ExternalLink, PlaySquare } from 'lucide-react';
 import { siteInfo } from '../data/podcastData';
 
 const Watch = () => {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ember-500/10 border border-ember-500/30 mb-6">
-            <Youtube className="w-4 h-4 text-ember-200" />
-            <span className="text-ember-100 text-sm tracking-wide">YouTube</span>
-          </div>
-          <h1 className="section-heading mb-4">Watch</h1>
-          <p className="text-ink-200 max-w-2xl mx-auto text-lg">
-            Lore videos, shorts, and behind-the-stacks updates — all in one place.
-          </p>
-        </motion.div>
+        <ArchiveHeading title="Watch" art="erilian-small">
+          Lore videos, shorts, and news from the Hidden Stacks.
+        </ArchiveHeading>
 
         <motion.section
           initial={{ opacity: 0, y: 18 }}

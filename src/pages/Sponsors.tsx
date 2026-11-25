@@ -1,3 +1,4 @@
+import ArchiveHeading from '../components/ArchiveHeading';
 import { motion } from 'framer-motion';
 import { sponsors } from '../data/podcastData';
 
@@ -5,27 +6,9 @@ const Sponsors = () => {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-14"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-mana-500/10 border border-mana-500/30 mb-6">
-            <img
-              src="/dharma-wheel.svg"
-              alt="Dharma wheel"
-              className="w-4 h-4"
-            />
-            <span className="text-mana-200 text-sm tracking-wide">
-              Support the Archive
-            </span>
-          </div>
-          <h1 className="section-heading mb-4">Sponsors</h1>
-          <p className="text-ink-200 max-w-2xl mx-auto text-lg">
-            Thanks to the sponsors helping keep the candles lit and the stacks
-            in order.
-          </p>
-        </motion.div>
+        <ArchiveHeading title="Sponsors" art="study">
+          Meet the people who help keep the candles lit and the stacks in order.
+        </ArchiveHeading>
 
         <div className="grid md:grid-cols-2 gap-6">
           {sponsors.map((s, idx) => (
